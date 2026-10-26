@@ -1,0 +1,21 @@
+{
+  "arm": "C",
+  "case_id": "FX12",
+  "classification": "public_development",
+  "created_utc": "2026-10-26T09:40:31.296696+00:00",
+  "fixture_hash": "56c35bf0bf5c097bd7bdadaa550d4f56760c384ab93b4a10c6f00afd23b99221",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "initial_files": {
+    "TASK.md": "ef44d0c16252d91cb9e9db5af0a4052757b0c3244d7fd85db5c2a461bd36d875",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "543e5f7de6efbc831ea797e475dc25d02d12fdcbaa2ade4a7d58d247d053abe8"
+  },
+  "model": "inherited",
+  "protocol_id": "development-forward-2026-10-26",
+  "run_id": "FX12-C-1-1793007631296690189",
+  "schema_version": 1,
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1,
+  "workspace": "/workspace/scratch/e63a44121a65/implementation/trials/legacy"
+}

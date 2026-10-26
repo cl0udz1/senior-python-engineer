@@ -1,0 +1,21 @@
+{
+  "arm": "C",
+  "case_id": "FX01",
+  "classification": "public_development",
+  "created_utc": "2026-10-26T09:36:39.514403+00:00",
+  "fixture_hash": "e73d0ec1acf320fa14aee1606a511047a835325a15cc1353365637b4c938d8d8",
+  "harness_hash": "e2c4234026cda94ef49772f3e6841a03f57e557ef4ae1e764c14a9b1b2a058b1",
+  "host": "ChatGPT-subagent",
+  "initial_files": {
+    "TASK.md": "8bedeb7a44caa2ced10f7f67e360a3d58d47049cb1eb01e44ac4f64f163972d8",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "bad45d4123e443d73d52d45ffb86c2190aa7624c630cbe9ce9328082f2323c42"
+  },
+  "model": "inherited",
+  "protocol_id": "development-forward-2026-10-26",
+  "run_id": "FX01-C-1-1793007399514397433",
+  "schema_version": 1,
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1,
+  "workspace": "/workspace/scratch/e63a44121a65/implementation/trials/async"
+}

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "runs": 5,
+  "distinct_tasks": 5,
+  "per_task_arm": [
+    {
+      "case_id": "FX01",
+      "arm": "C",
+      "runs": 1,
+      "adjudicated": 1,
+      "artifact_checks_passed": 1,
+      "grading_errors": 0,
+      "pass_rate": 1.0,
+      "any_success": true,
+      "all_success": true,
+      "critical": 0
+    },
+    {
+      "case_id": "FX06",
+      "arm": "C",
+      "runs": 1,
+      "adjudicated": 1,
+      "artifact_checks_passed": 1,
+      "grading_errors": 0,
+      "pass_rate": 1.0,
+      "any_success": true,
+      "all_success": true,
+      "critical": 0
+    },
+    {
+      "case_id": "FX09",
+      "arm": "C",
+      "runs": 1,
+      "adjudicated": 1,
+      "artifact_checks_passed": 1,
+      "grading_errors": 0,
+      "pass_rate": 1.0,
+      "any_success": true,
+      "all_success": true,
+      "critical": 0
+    },
+    {
+      "case_id": "FX10",
+      "arm": "C",
+      "runs": 1,
+      "adjudicated": 1,
+      "artifact_checks_passed": 1,
+      "grading_errors": 0,
+      "pass_rate": 1.0,
+      "any_success": true,
+      "all_success": true,
+      "critical": 0
+    },
+    {
+      "case_id": "FX12",
+      "arm": "C",
+      "runs": 1,
+      "adjudicated": 1,
+      "artifact_checks_passed": 1,
+      "grading_errors": 0,
+      "pass_rate": 1.0,
+      "any_success": true,
+      "all_success": true,
+      "critical": 0
+    }
+  ],
+  "paired_C_vs_B": {
+    "distinct_paired_tasks": 0,
+    "per_task": [],
+    "mean_difference": null,
+    "exploratory_task_bootstrap_95_percent_interval": null
+  },
+  "paired_C_vs_A": {
+    "distinct_paired_tasks": 0,
+    "per_task": [],
+    "mean_difference": null,
+    "exploratory_task_bootstrap_95_percent_interval": null
+  },
+  "warnings": [
+    "Public development results do not establish unseen-task generalization.",
+    "Artifact checks alone are not complete task outcomes; unreviewed runs remain unscored."
+  ]
+}

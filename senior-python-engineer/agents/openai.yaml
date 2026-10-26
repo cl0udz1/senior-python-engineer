@@ -1,0 +1,4 @@
+interface:
+  display_name: "Senior Python Engineer"
+  short_description: "Practical Python design, implementation, and review"
+  default_prompt: "Use $senior-python-engineer to inspect this Python project and complete the requested work with proportionate verification."

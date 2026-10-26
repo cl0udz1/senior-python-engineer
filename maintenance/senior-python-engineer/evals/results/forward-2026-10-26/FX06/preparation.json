@@ -1,0 +1,21 @@
+{
+  "arm": "C",
+  "case_id": "FX06",
+  "classification": "public_development",
+  "created_utc": "2026-10-26T09:40:31.240798+00:00",
+  "fixture_hash": "d6235fd926793ad3fe0170d4409405f5a99aa349e373dcc0c7b873601de788c2",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "initial_files": {
+    "TASK.md": "23c82b7b39df56570db0c6d8719cf176b20e160b38fab57d7742d05bd809c387",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "cb2a4c6db90d6602d981985db854501ca4723534fa58d4dd7449f96d000cfe57"
+  },
+  "model": "inherited",
+  "protocol_id": "development-forward-2026-10-26",
+  "run_id": "FX06-C-1-1793007631240793568",
+  "schema_version": 1,
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1,
+  "workspace": "/workspace/scratch/e63a44121a65/implementation/trials/migration"
+}

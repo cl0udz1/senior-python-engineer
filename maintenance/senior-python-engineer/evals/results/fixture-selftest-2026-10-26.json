@@ -1,0 +1,221 @@
+{
+  "checks": [
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX01",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX01",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX02",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX02",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX03",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX03",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX04",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX04",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX05",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX05",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX06",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX06",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX07",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX07",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX08",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX08",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX09",
+      "execution_status": "not_applicable",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "unchanged_scope"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX10",
+      "execution_status": "not_applicable",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "unchanged_scope"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX11",
+      "execution_status": "not_applicable",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "unchanged_scope"
+    },
+    {
+      "actual_artifact_pass": false,
+      "as_expected": true,
+      "case_id": "FX12",
+      "execution_status": "failed",
+      "expected_artifact_pass": false,
+      "failure_log": null,
+      "variant": "baseline"
+    },
+    {
+      "actual_artifact_pass": true,
+      "as_expected": true,
+      "case_id": "FX12",
+      "execution_status": "passed",
+      "expected_artifact_pass": true,
+      "failure_log": null,
+      "variant": "reference"
+    }
+  ],
+  "created_utc": "2026-10-26T09:39:18.668060+00:00",
+  "fixture_hashes": {
+    "FX01": "e73d0ec1acf320fa14aee1606a511047a835325a15cc1353365637b4c938d8d8",
+    "FX02": "a82aa8d978e3e82bb44c202dcc2c26aff6eea2324f91271f5a09c6c66c489e25",
+    "FX03": "8d283fd0b225543174cf04e238274aa848a57e1cd6a0c8c8d44ac9a8b4e186e0",
+    "FX04": "c1c384f15866bbd93832c358208d03b1099a31d6a034fa360aee506a469ea663",
+    "FX05": "b3631969f9ee7b8ab3bf39eb0b7b39646e14d6bb754be3863675a18215cf4185",
+    "FX06": "d6235fd926793ad3fe0170d4409405f5a99aa349e373dcc0c7b873601de788c2",
+    "FX07": "857fdef1c0ee5d0bf723fd54dd97b77081a60086b160463f024feebfad4eaefd",
+    "FX08": "cd083567a9aa40138ed4e263935666ed75d92292ee38b0ab3182b9a9be2b03a3",
+    "FX09": "88ebcf414cac9fff36149cda81cdbe8735ea01b8fedd15dd019dc7eb72a51a99",
+    "FX10": "a523d0f32701d358ed758f673be3d70d873f7e26a7ce920379c785b63545ed90",
+    "FX11": "e97e1ec24fd88305653c4f4bb135ff42d349dc9042d24279598573dd4c362d1e",
+    "FX12": "56c35bf0bf5c097bd7bdadaa550d4f56760c384ab93b4a10c6f00afd23b99221"
+  },
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "kind": "fixture_and_grader_selftest",
+  "not_measured": [
+    "Agent quality",
+    "Automatic skill activation",
+    "Unseen-task generalization",
+    "Actual Windows shell execution",
+    "PostgreSQL SQLSTATE behavior"
+  ],
+  "passed": true,
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "schema_version": 1
+}

@@ -1,0 +1,1017 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 88,
+    "sha256": "f770c93eacc6ab330415d6e35337dc8b1e97ac1c117cedd610e28e427d72b661"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1642,
+    "sha256": "eb255691e48ebb5ac78cc7d02114df0f4bf07fe32d6d687c40562071e74c0f25"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/README.md",
+    "bytes": 4602,
+    "sha256": "27dd677071d2528d892f8161cf88573e016346fe40ffad06b7f9ed98ab004a60"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/RELEASE_VERIFICATION.md",
+    "bytes": 8646,
+    "sha256": "bc3411e83b09d22fe4768e210c616d679b4587729f61a20e1c3f190d82f6425a"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/VERSION.md",
+    "bytes": 3153,
+    "sha256": "3cd3530ce4ef91e8cfde58ab8851c27a76cdff8fd8616e0323299da9f666ad8b"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/ADJUDICATION.md",
+    "bytes": 4559,
+    "sha256": "d91edb16b6707a650255ade0a883d6bd6dbcfebeeda174aad327bf7119b4595d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/HARNESS.md",
+    "bytes": 10881,
+    "sha256": "21a140f5cbf3688f2906f8b693aaef5dfb9de66ddec53e41dbd8d7e0044b4534"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/README.md",
+    "bytes": 8160,
+    "sha256": "6a6dbc7055f75ad3e84e5550946c267f9c497d66ae32dc999e7db4b7df11d86d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/activation-cases.json",
+    "bytes": 2231,
+    "sha256": "6c91aaee86ef9c0bf0291cd6b9e732f116a3c30138fcedfce7c15b6533d47916"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/architecture-traps.md",
+    "bytes": 23067,
+    "sha256": "3a2c3eb5f4eecd2f73de64b55c5e2975b313608ce4b5d97cccf132a968a43f60"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/async-traps.md",
+    "bytes": 28200,
+    "sha256": "7efd82797ee26b0d10431d8af867da04e54bea4b1a00e394b37363d477ab0c2e"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/database-traps.md",
+    "bytes": 21162,
+    "sha256": "d662c9dad6273b9b955c4f19c33cda78a9a8feb239bc3b79d484abf1102d63f8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/domain-cases.md",
+    "bytes": 18018,
+    "sha256": "f532e3f67d18a5c0e43242485915810fdf6c638dada0a4df15c4fcc028fd52af"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/expected-behavior.md",
+    "bytes": 10413,
+    "sha256": "56fff87c34cf70bed39474a3d95ce4f733dc03b244f24fee76a4c278f785698f"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX01/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX01/starter/solution.py",
+    "bytes": 417,
+    "sha256": "bad45d4123e443d73d52d45ffb86c2190aa7624c630cbe9ce9328082f2323c42"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX01/task.md",
+    "bytes": 681,
+    "sha256": "8bedeb7a44caa2ced10f7f67e360a3d58d47049cb1eb01e44ac4f64f163972d8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX02/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX02/starter/solution.py",
+    "bytes": 135,
+    "sha256": "781caf49aa295483d8062e2e7965b506b80e9eaa5c3c6b2c50101505e1bdbdbe"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX02/task.md",
+    "bytes": 506,
+    "sha256": "d558e4587d4b14f03b7e9b00ec04d24629639d849d37c80c4dd2bc92fd2fa393"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX03/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX03/starter/solution.py",
+    "bytes": 343,
+    "sha256": "fcc1e4f8c101613ba442833f64b9f6590ad0f7e0ea73d27459cea37d041cdf31"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX03/task.md",
+    "bytes": 787,
+    "sha256": "d49b69ecade0f3cbcd98f0508cc9c2a559b396ea30f49847b2d23d0a4cbd28b6"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX04/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX04/starter/solution.py",
+    "bytes": 243,
+    "sha256": "9973d47d4d79fa054d6c25180b268208c1f5d284f692b7d81907df8434657c9c"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX04/task.md",
+    "bytes": 1277,
+    "sha256": "035ccb0dc00725fc0b879af355a4c335a19d4d2cda5e045cbd9d4b9c4c1bf4e7"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX05/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX05/starter/solution.py",
+    "bytes": 394,
+    "sha256": "cfc5d73aa954030787da9d16ce70cb0b31a0a00099154698f66ea2587f96d599"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX05/task.md",
+    "bytes": 477,
+    "sha256": "7ecdc15c3c81ff128e43a9dbff8071a8cda8eba0733218216a3c59861fadb586"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX06/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX06/starter/solution.py",
+    "bytes": 201,
+    "sha256": "cb2a4c6db90d6602d981985db854501ca4723534fa58d4dd7449f96d000cfe57"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX06/task.md",
+    "bytes": 904,
+    "sha256": "23c82b7b39df56570db0c6d8719cf176b20e160b38fab57d7742d05bd809c387"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX07/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX07/starter/solution.py",
+    "bytes": 100,
+    "sha256": "594b33336afc73772a9887e1742a9b0ac57c68f39be9593de981a2d3f8ed75c6"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX07/task.md",
+    "bytes": 609,
+    "sha256": "cf5a4d023fb799bbb623ad018a124edbbe32f3389b64bd27e633e922bfc18bcb"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX08/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX08/starter/solution.py",
+    "bytes": 186,
+    "sha256": "2ee56cd367a242cdc9e9bf5cb7330705100c0165d4176b5c809d0941209e2205"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX08/task.md",
+    "bytes": 602,
+    "sha256": "e5dc724e55884bca4b235cb9bc9f7adc8d94f48c2168755fb88b56bcca4d0040"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX09/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX09/starter/solution.py",
+    "bytes": 91,
+    "sha256": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX09/task.md",
+    "bytes": 631,
+    "sha256": "fae1e27175dd973dcb0345975f04f1fcaa61816504b524b589a1835697bba277"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX10/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX10/starter/solution.py",
+    "bytes": 123,
+    "sha256": "2e0565dca14228e6eff00b907ac92b3f377058bf3f783e6e28021837d4361005"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX10/task.md",
+    "bytes": 428,
+    "sha256": "d86f9c5a3d90d894f055d67a548a285077d5641d4afce8bc9f74b037fb38bea2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX11/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX11/starter/solution.py",
+    "bytes": 117,
+    "sha256": "195b429f006fc858796f1489f4d3308938b8102bc4297921a35ce30884612adb"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX11/task.md",
+    "bytes": 428,
+    "sha256": "d86f9c5a3d90d894f055d67a548a285077d5641d4afce8bc9f74b037fb38bea2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX12/starter/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX12/starter/solution.py",
+    "bytes": 218,
+    "sha256": "543e5f7de6efbc831ea797e475dc25d02d12fdcbaa2ade4a7d58d247d053abe8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures/FX12/task.md",
+    "bytes": 396,
+    "sha256": "ef44d0c16252d91cb9e9db5af0a4052757b0c3244d7fd85db5c2a461bd36d875"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/fixtures.json",
+    "bytes": 3402,
+    "sha256": "bb54f8fd57ce71daf5b19735af29b747263fb26951d349a989c6aea168f8d90b"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX01.py",
+    "bytes": 3640,
+    "sha256": "60e1171b4e2f80ea712522e6e5c772e6024384f391415abb5aa6c05b8a083623"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX02.py",
+    "bytes": 2000,
+    "sha256": "ce22197e5b3de5ce0e54b3952324e21d51439c9cd7a5a5fe70328d0976dcb3e2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX03.py",
+    "bytes": 2167,
+    "sha256": "8cdeab4c6c16d38ea6e0f7a5db9873170660ef3077e796c16335d084502935a1"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX04.py",
+    "bytes": 2393,
+    "sha256": "230a7f0145b7cd1426f2fa92a5c8510bada6d66f683f9c19878898bdbd4d6b9d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX05.py",
+    "bytes": 763,
+    "sha256": "986f9c1265c0f9a36ddad5bb7fcd36045e4e207c1ec8d48ee4664e0a6c114362"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX06.py",
+    "bytes": 1115,
+    "sha256": "1b60f69444906c4f80b34bc7750dd154d6992cf73cd6299e31bffbd7d85c3a73"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX07.py",
+    "bytes": 1095,
+    "sha256": "1a5cfff0427935eb6f4572cdbba6053b1e636ae12e9c53b6883e2ad0e26457c3"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX08.py",
+    "bytes": 1095,
+    "sha256": "1a5cfff0427935eb6f4572cdbba6053b1e636ae12e9c53b6883e2ad0e26457c3"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/graders/FX12.py",
+    "bytes": 608,
+    "sha256": "80be95f4460cc3d327adc6fd94fe68552e26a47cdfb26cec6ab4306823afe834"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/greenfield-cases.md",
+    "bytes": 16321,
+    "sha256": "f17972fc83e78bf00ccfc70632723f872cc4dd077548b754bfbf17bbcf8685e6"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/overengineering-traps.md",
+    "bytes": 20271,
+    "sha256": "484a907c41130a989065b4e13b30e81582af57e60c7efb8bf8c5b1b7850884c7"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/performance-traps.md",
+    "bytes": 16413,
+    "sha256": "5e0b3f748aec100ca2019e9b4a85ba897fdb473fdac60c8c3d15c83ffd0c459d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/pilot-plan.json",
+    "bytes": 8915,
+    "sha256": "4df43bfe47272671a11c99f4c1aee3b3e9cbaf691eafe9dc7f5381a8a56e2e08"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX01/solution.py",
+    "bytes": 690,
+    "sha256": "76da6e43c8c4ea11752420f1d45cc3bb99a4cbb093399485efa272c7949bf14d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX02/solution.py",
+    "bytes": 355,
+    "sha256": "cc06363b8db7c7e9ca1d12169cfa0bb4b3640c4720ccc43fc175a6ba6e8f3dde"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX03/solution.py",
+    "bytes": 535,
+    "sha256": "db18980870720a49d09513f5a8597de14863b0b72ddb6d7d0f7e8e793eeef2e8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX04/solution.py",
+    "bytes": 547,
+    "sha256": "2cd1fc7c739d0f6b56e63ac2f2e3fc368d5de11d1a52e0a8cfefe7f5f468a515"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX05/solution.py",
+    "bytes": 175,
+    "sha256": "98ca9f557ba3b8f97aa1855693b81d0b33a895b329d79f8916b2e8f7465eb740"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX06/solution.py",
+    "bytes": 463,
+    "sha256": "b382bffcf73ea412e6c2061009951d4767ac1010f4f394d6dfdca3b8a98d7e48"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX07/solution.py",
+    "bytes": 305,
+    "sha256": "0d8cd7b8d391e37c0e57864ccd51711e45d4b7586444d81e4e28bacf29a33f8f"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX08/solution.py",
+    "bytes": 305,
+    "sha256": "0d8cd7b8d391e37c0e57864ccd51711e45d4b7586444d81e4e28bacf29a33f8f"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/reference/FX12/solution.py",
+    "bytes": 224,
+    "sha256": "f48ea670337be02901ab76ac58d413d34c8456438282a4154e0751c93cafe1b5"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/fixture-selftest-2026-10-26.json",
+    "bytes": 6393,
+    "sha256": "47d2ad83152b4c629933f08f8d28ca51133936276175881af5c9c9318cf1accc"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/TASK.md",
+    "bytes": 681,
+    "sha256": "8bedeb7a44caa2ced10f7f67e360a3d58d47049cb1eb01e44ac4f64f163972d8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/adjudicated.json",
+    "bytes": 4552,
+    "sha256": "acb0107a86db497332d3217586a99cd2c94da6dec42ddcf54033993b8de601a3"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/judgment.json",
+    "bytes": 962,
+    "sha256": "5f149566efb11d13ca9145b3f8ed357b8469c34c315cb3fe0029d9c12bb9c28d"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/original-preparation.json",
+    "bytes": 935,
+    "sha256": "8486a0982b61ab44d2a83fff1857ea93a0f8fbd915a9cff0b11810e34eba76e9"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/preparation.json",
+    "bytes": 943,
+    "sha256": "83c292f60fd76c6b303b331e7c60c99ced140c1cbf717c6905abd895e0cb7294"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/provenance.json",
+    "bytes": 1711,
+    "sha256": "ebf946deed503d5dd8c665ac0076795f8fe993b11ea351c713251ffa419418ca"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/response.md",
+    "bytes": 2051,
+    "sha256": "7ddd941f1433fd93341e7041debe4852b3f9a5ccf9d729e1e999ecd38e8820a4"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/result.json",
+    "bytes": 3565,
+    "sha256": "9cd08bc4df6b0789242364a05652fd325da36e9693f462b65443ba1c03eb61bb"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX01/solution.py",
+    "bytes": 2533,
+    "sha256": "d237e01cd37b1ae653c2e6c86fc3b8bc8022ef1a1be71ee4c48c38adb9c6e6ff"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/TASK.md",
+    "bytes": 904,
+    "sha256": "23c82b7b39df56570db0c6d8719cf176b20e160b38fab57d7742d05bd809c387"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/adjudicated.json",
+    "bytes": 4572,
+    "sha256": "174d222cac64ffad3f59042afb8b95acb39380d4ae7a28e3d7497e7440690192"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/judgment.json",
+    "bytes": 985,
+    "sha256": "855ab780cfe6af7cf414f212664fb65f4a78abd786264c5bebccfe4bd75d2506"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/preparation.json",
+    "bytes": 939,
+    "sha256": "08e73a698174220c60919a40c0fd670ec2102c585ff3d77407d84a45c5f0a933"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/provenance.json",
+    "bytes": 1059,
+    "sha256": "de32ffb02c65bed494d87dbf0572aa716b2424036b0d4f883a021bbdac604c7c"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/response.md",
+    "bytes": 4664,
+    "sha256": "e95069f20159581419f8d9d46fd38945ca7f04782223c0847150093eecf7ba09"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/result.json",
+    "bytes": 3562,
+    "sha256": "e823db58222aa147f8a7c24554ec9c1807d51ae7a82fd961dab9c9610ab767bf"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX06/solution.py",
+    "bytes": 850,
+    "sha256": "aa4013e274181b527f2062f15385d0dea5a682157f1a715b583208d059a294b7"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/TASK.md",
+    "bytes": 631,
+    "sha256": "fae1e27175dd973dcb0345975f04f1fcaa61816504b524b589a1835697bba277"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/adjudicated.json",
+    "bytes": 2853,
+    "sha256": "b68aee14e8a21a229a610f45e7b10066f87c211dfedcedb0963159f9685147fe"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/judgment.json",
+    "bytes": 972,
+    "sha256": "e883973e3bb1f27292048f64a5244aa4db8cd86c48fda0a3b03fbd542a0fcc5f"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/original-preparation.json",
+    "bytes": 936,
+    "sha256": "4fc0928cf3efc2f384adb5828bc3e7db6439c7a815c91d07930af16de536b700"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/preparation.json",
+    "bytes": 944,
+    "sha256": "6249ca3427dbf3253bc8a710f30382406cacc5b7a45955f2fb8b42f2ca4aa3a5"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/provenance.json",
+    "bytes": 1742,
+    "sha256": "047d64da5bc38efe5e53106e2708de0b964462755f484766644bf406dc2e48fa"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/response.md",
+    "bytes": 4729,
+    "sha256": "e16708ba68de5b1f7c2564a135a682898008976e7cfe9532e4dd85354ae90fc9"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/result.json",
+    "bytes": 1856,
+    "sha256": "0bbedc38cd56db8e0c06f5c005c08356f12e624ba61b36241d15e9760c31b41e"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX09/solution.py",
+    "bytes": 91,
+    "sha256": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/TASK.md",
+    "bytes": 428,
+    "sha256": "d86f9c5a3d90d894f055d67a548a285077d5641d4afce8bc9f74b037fb38bea2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/adjudicated.json",
+    "bytes": 2839,
+    "sha256": "0558509483fd1a1ef9350ee9da41102b2ad6263078efae8f385b12705141397e"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/judgment.json",
+    "bytes": 958,
+    "sha256": "3dc6dc1808e154e2069c3911fc948c5b9524219dc8da2c5d0c483936c8017625"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/preparation.json",
+    "bytes": 936,
+    "sha256": "2428ff42cad233e1f7617ec10ffc5f594634ad3d413ed91aed85c6c53fa8d8b2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/provenance.json",
+    "bytes": 955,
+    "sha256": "3604356924897fc845e79fea4caecb02f2a95f53071362ae9c436515f97103c8"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/response.md",
+    "bytes": 1520,
+    "sha256": "54ee837980e56012ff00b8af1e97fa7729dd072188375dd74efcc11deed07e9b"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/result.json",
+    "bytes": 1856,
+    "sha256": "0961fc6db68945fec32cb31c0382f420211ebf9383b0bab1ca152a2d1c4496f6"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX10/solution.py",
+    "bytes": 123,
+    "sha256": "2e0565dca14228e6eff00b907ac92b3f377058bf3f783e6e28021837d4361005"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/TASK.md",
+    "bytes": 396,
+    "sha256": "ef44d0c16252d91cb9e9db5af0a4052757b0c3244d7fd85db5c2a461bd36d875"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/adjudicated.json",
+    "bytes": 4545,
+    "sha256": "ca2a05c0ee0cfdd29a95ecf300252aee6fa4148675d0f7cd2e47e015e3734454"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/judgment.json",
+    "bytes": 969,
+    "sha256": "de5513517e219d27ba728c8658389ca555d5b334f7a45969a0b75141dfcc24e1"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/preparation.json",
+    "bytes": 936,
+    "sha256": "aa9bcbede09e7ae1301a2834d7bdfc37107ab98a813032c76dbb3a9da4bf2abf"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/project.txt",
+    "bytes": 83,
+    "sha256": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/provenance.json",
+    "bytes": 963,
+    "sha256": "d5705ce73d006ea95dea50bc063e91f3be68ca41c5c995d6d470aa7582cc91d5"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/response.md",
+    "bytes": 836,
+    "sha256": "cf717dbb95dd994b7cb3bbcb60aaffb339b6233c7086709c5a15bfd6f5270c68"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/result.json",
+    "bytes": 3551,
+    "sha256": "1d6ccf45db1abc0412d50745ee82bb9cebcb9a01626966ad35f606a3370f6c6c"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/FX12/solution.py",
+    "bytes": 225,
+    "sha256": "7db2457394782eb43b800e45c0ba6432ee615f35a48a49c579af72abcc8476af"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/independent-review.md",
+    "bytes": 2420,
+    "sha256": "53c47f58e3725a3ffe400500d91cd7cc5311d35227d1ed4605117c62299fba77"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/results/forward-2026-10-26/summary.json",
+    "bytes": 1896,
+    "sha256": "61b3538515fd7d593f0c8a2c15f3be3d4e5afd2cd44620debdb962715c73246e"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/review-cases.md",
+    "bytes": 28218,
+    "sha256": "79b9b1f76b47d3e2734b6194adda303d558f852a068944628f16d234e938b455"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/run-schema.json",
+    "bytes": 6278,
+    "sha256": "4647352301da5f6f53dbba88f972ff1bef7e69669d0e38e1a7914aa6f9cc4951"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/evals/security-traps.md",
+    "bytes": 22869,
+    "sha256": "75532045a357804d1b5e1a21ab29f08932f6bc6c0e2249dff0750525cf8d754b"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/2026-10-02-verification.md",
+    "bytes": 21877,
+    "sha256": "1825dd8d960e7d313d8b4de8f7ddbc5e9fe9e7395d03b0a6502c93c0ef45eaed"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/SOURCE_POLICY.md",
+    "bytes": 3693,
+    "sha256": "72c01f781877c72c75ea4777ac4ead0200f85a4aef021378b59aa459180fc38b"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/authoring-claims.json",
+    "bytes": 2068,
+    "sha256": "58464e7df086357528079f0c39cad485e53b78dece29323a70c386aaf1fd7c18"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/build-spec.md",
+    "bytes": 27241,
+    "sha256": "41a89c9ef8af4c7aa64fa1f4107a2ddf32325e11397e38ded44ea96c0f926ba2"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/deep-research-report.md",
+    "bytes": 42547,
+    "sha256": "aeab32ace211b1549aedff2902fd333f988ce33df14eb4cacaea7c5ffc3104d0"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/history/versions-through-1.4.0.md",
+    "bytes": 5496,
+    "sha256": "219c0cc046c5c49c255e961d744e6f57db492fafff4151037f93c116c196587f"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/research/technical-claims.json",
+    "bytes": 19984,
+    "sha256": "5014e85857ff25060bd895fb8731a261baa45b38624d2a61dd66fe3c5275a706"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/build_runtime.py",
+    "bytes": 1978,
+    "sha256": "9bdc4134c08875d1cac3c125ed9b44bd3b75c5f8ad1c4fe7d5a21759b2f11144"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/check_sources.py",
+    "bytes": 4706,
+    "sha256": "050f340b789a67808d8475330181294e743eef48b29b9d7c781c7e7f08e93356"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/evaluate.py",
+    "bytes": 26919,
+    "sha256": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/test_evaluate.py",
+    "bytes": 7748,
+    "sha256": "00992bc4c88c24cd73797e5b1cadaba13448ab342a95cb692619b44da770e974"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/test_package_tools.py",
+    "bytes": 3632,
+    "sha256": "d0e199a7a4b20a27252486d4489e81a1fcd0dd4007859003a8f75cdbd88cf4d4"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/validate_skill.py",
+    "bytes": 8955,
+    "sha256": "3fd33622250a357b9312f33bd13a864805c1869177c26a509440cb9e4505ec99"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/tools/verify_python_semantics.py",
+    "bytes": 6811,
+    "sha256": "51cde616f78fc289aec6a788a6ea815ae4573b7bb2638502b9f5724b9a40d7ae"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/fixture-selftest.json",
+    "bytes": 6393,
+    "sha256": "4879db166195dd4a5621c533c0d36772b29248efdf119a28d79a9213c3baa9ba"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/metadata-check.txt",
+    "bytes": 16,
+    "sha256": "db349825903d66adffea3ecf1bd8e1803043e8a71cf1a051235dabc5371f5bb0"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/package-integrity.json",
+    "bytes": 9274,
+    "sha256": "d1e437ed1c3ea8ff26dc83c2e89ad72df375ee3267c3ded85f034d6b59d4e983"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/python-semantics.json",
+    "bytes": 1413,
+    "sha256": "ae7d2d3abfa7af750f4d8b6626f815949adb916056981ae6ed476eaf1e5e8427"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/runtime-manifest.json",
+    "bytes": 9286,
+    "sha256": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/source-registers.json",
+    "bytes": 187,
+    "sha256": "0c558e1ebd7d194e5ae3e5548840add38d58da6e5cfc684535ef01a227f55051"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/tool-tests.txt",
+    "bytes": 2778,
+    "sha256": "f52a971ad7d449b138fbebf49d39a2a3285f997bd5a00809b40d6ad6c615fd23"
+  },
+  {
+    "path": "maintenance/senior-python-engineer/validation/verification-index.json",
+    "bytes": 2398,
+    "sha256": "a8457980eb0968cc681f0c7bc965d6063b3264fe596c9e8dc778d9aad42014d1"
+  },
+  {
+    "path": "senior-python-engineer/SKILL.md",
+    "bytes": 10130,
+    "sha256": "1cdab4b729812ca27c98dfd2151e952d5bf5caf965ad36f85a83b6441bb295ec"
+  },
+  {
+    "path": "senior-python-engineer/agents/openai.yaml",
+    "bytes": 271,
+    "sha256": "e59dd8009a6bc36b434ea24811425b0d823d61b61384bffe930e391da6127478"
+  },
+  {
+    "path": "senior-python-engineer/catalogs/anti-patterns.md",
+    "bytes": 37195,
+    "sha256": "83de9804ed570212346b619dbe46d91b4d8609680f68fa245bac9ab35b1ad722"
+  },
+  {
+    "path": "senior-python-engineer/catalogs/failure-modes.md",
+    "bytes": 21862,
+    "sha256": "ea0273bad16c99a2b9bf93e55f1059a7677e00e8f4e898daddb8246604cae6aa"
+  },
+  {
+    "path": "senior-python-engineer/catalogs/smells.md",
+    "bytes": 16990,
+    "sha256": "cc651157d8053d8b31b5cf90fdf7537f2cef316862e51b9a85a8f7334bf56fd7"
+  },
+  {
+    "path": "senior-python-engineer/core/decision-model.md",
+    "bytes": 20119,
+    "sha256": "01bccacef1f115365081978f887e5770fee1cdfca83651a9fd7a4312937eeed8"
+  },
+  {
+    "path": "senior-python-engineer/core/engineering-principles.md",
+    "bytes": 9972,
+    "sha256": "e12a9b2784afe9164a5c9c638a12b14027f13146c55fe0e903168dd4113e3f1b"
+  },
+  {
+    "path": "senior-python-engineer/core/evidence-rules.md",
+    "bytes": 8865,
+    "sha256": "2831b79577047763366ec721df4379fe3fc7bb32be36cb79d30c9a7026cc0b22"
+  },
+  {
+    "path": "senior-python-engineer/core/python-invariants.md",
+    "bytes": 13735,
+    "sha256": "007254f6a1e297350944f4a61963fd4baceeefe60478e912343a5e10af1ee8fe"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/ai-ml.md",
+    "bytes": 14189,
+    "sha256": "8b93c6b20445de71fde1dd42e1871d9b74cd46116ab9a63b33ea255ba5f9c026"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/backend-application.md",
+    "bytes": 15294,
+    "sha256": "0c347b5a10e3408871b5dfaa61690368195bc06d0fb3ee306e0e94153aed8ad8"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/cli-automation.md",
+    "bytes": 13288,
+    "sha256": "671160a2f4b4420d33a0883993035b10036896ffe981a602f18316e6fdb16507"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/data-engineering.md",
+    "bytes": 13511,
+    "sha256": "7622edb2957caa2a47413aab48c6175f6e071a6b6b4e7f64922ee8edad2b1fda"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/existing-codebase.md",
+    "bytes": 12448,
+    "sha256": "a1d2ff535f85fdfd2d189be63f2b6e717d123031b32ea7e2c668d3237135f371"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/greenfield-project.md",
+    "bytes": 15659,
+    "sha256": "3e99c1d439d8e2f854ec0a90c924eb9dcaaf86f5f5c76b59b7a79cdb167fd2d4"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/library-package.md",
+    "bytes": 14150,
+    "sha256": "649bfd6fe19bdf97a55798824aad90c99614e6dc8aba1212f04e77266a66c7e8"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/llm-agentic.md",
+    "bytes": 15502,
+    "sha256": "e3bb5ee56de6cbfd05fd8b25c734f8ca5ea2fd69c53ae083d9adeb38b3f10a67"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/production-service.md",
+    "bytes": 14000,
+    "sha256": "e7755e1b0f409a0503f1c4007c900a312a89c1ae4983544579dd39fd950d9306"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/security-automation.md",
+    "bytes": 14251,
+    "sha256": "a5acbe6f4a2531c2e4155fd4a81b837fcfd34f8bfee3ad773af331aec5b8d313"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/web-api.md",
+    "bytes": 14664,
+    "sha256": "e0287db1fb1b419a65f944ffa2f804e533d1148e4d71f4168c25c96ce227b942"
+  },
+  {
+    "path": "senior-python-engineer/playbooks/workers-jobs.md",
+    "bytes": 13408,
+    "sha256": "c7b6f5afd58cd167c993080d8c694717817ea638acfa62e60c514d09f0216e20"
+  },
+  {
+    "path": "senior-python-engineer/references/ai-ml.md",
+    "bytes": 9495,
+    "sha256": "64bdc261fc6b77675b7892814d8fab75d021eb9ad012a622cb21000336994a40"
+  },
+  {
+    "path": "senior-python-engineer/references/architecture.md",
+    "bytes": 14637,
+    "sha256": "e96070bb923d71e5f84ed8566a3fb35a82f47ec2fc38a3267525aa235c75a5fe"
+  },
+  {
+    "path": "senior-python-engineer/references/asyncio-concurrency.md",
+    "bytes": 13372,
+    "sha256": "a1bef3ba903cf3813456f909434b834e0edbbdb89038440877ce6aa40bb5e93f"
+  },
+  {
+    "path": "senior-python-engineer/references/deployment.md",
+    "bytes": 10082,
+    "sha256": "e1d03984a17a016f6648c5530a571f2c2d1177ec99757a56e7f97f5d483aa26c"
+  },
+  {
+    "path": "senior-python-engineer/references/language-semantics.md",
+    "bytes": 13415,
+    "sha256": "df66818fda3a0f62d5c2af12686436ef34f7fd61f98d6c94e28a635460ab1003"
+  },
+  {
+    "path": "senior-python-engineer/references/modern-python-baseline.md",
+    "bytes": 9083,
+    "sha256": "52b473507791ee5d564de7451928af8b673231cb5dd5cd8d903a0b54f58f4eaf"
+  },
+  {
+    "path": "senior-python-engineer/references/observability.md",
+    "bytes": 8918,
+    "sha256": "e80f00d7e09239e48ae09939523d19729d35107eb1ebddd9ef63acc8b833d270"
+  },
+  {
+    "path": "senior-python-engineer/references/packaging.md",
+    "bytes": 8899,
+    "sha256": "46d4c5f6029d7d8b17ee8e7496324b2570101b9454e8e265c04a4de2b892fb20"
+  },
+  {
+    "path": "senior-python-engineer/references/performance.md",
+    "bytes": 10193,
+    "sha256": "ed812a27214b2b60f0ea2ecb96c1b06c43e2c39f37a9520a893c26edd537ec1d"
+  },
+  {
+    "path": "senior-python-engineer/references/persistence.md",
+    "bytes": 11118,
+    "sha256": "05fbca7d0c395acb0318cd74fa800ce78136697d6183e1f39ab3275745fd05a8"
+  },
+  {
+    "path": "senior-python-engineer/references/reliability.md",
+    "bytes": 9412,
+    "sha256": "c404c517bb8fc0fa33eefecddf6526f6fc754c8fdf535aecbc9449b79712e222"
+  },
+  {
+    "path": "senior-python-engineer/references/security.md",
+    "bytes": 14015,
+    "sha256": "112b10b9067598a3545de61f9bff7a40aab8c12b8fdbc9363059f28d3abc4e49"
+  },
+  {
+    "path": "senior-python-engineer/references/testing.md",
+    "bytes": 10783,
+    "sha256": "8836a01903177bc6e086dcc39eafcc7b9730aed024087673327d2c425e98a460"
+  },
+  {
+    "path": "senior-python-engineer/references/tooling.md",
+    "bytes": 9387,
+    "sha256": "c36742764511f7b7b826eb361db4f6f8d27ed396f9fb8c36bef8ec052278accc"
+  },
+  {
+    "path": "senior-python-engineer/references/typing.md",
+    "bytes": 12193,
+    "sha256": "46c3d7c7366d0f55bca2573257a5f38915d4d65b3f93b7650f27f623684f2dbb"
+  },
+  {
+    "path": "senior-python-engineer/references/web-frameworks.md",
+    "bytes": 8738,
+    "sha256": "13baf571ec02f8195faba0c5f500e7c624e32fceeb0cc12bc550bcd286e00726"
+  },
+  {
+    "path": "senior-python-engineer/reviews/architecture-review.md",
+    "bytes": 10681,
+    "sha256": "ed0a436dbae10dbbd7f86b0606949ecce81929ea88ff50ca0cee8d4403b4b184"
+  },
+  {
+    "path": "senior-python-engineer/reviews/async-review.md",
+    "bytes": 11061,
+    "sha256": "aecdd41d0baecc82892eba6684befd25eba6a2bd7dc0f24ebbe2724220958c2b"
+  },
+  {
+    "path": "senior-python-engineer/reviews/code-review.md",
+    "bytes": 11481,
+    "sha256": "62df44fa1efad8657261bac70f96e70c56e0f15a8ed54120932720c4d35683bf"
+  },
+  {
+    "path": "senior-python-engineer/reviews/concurrency-review.md",
+    "bytes": 9783,
+    "sha256": "9aeaecd3a7284597db5e94fa34110ceaec848a3345bd98dfada569f6cb999a90"
+  },
+  {
+    "path": "senior-python-engineer/reviews/database-review.md",
+    "bytes": 10076,
+    "sha256": "cae93ac7f9a92f934bfa92250e0ca0f365ec7c8f2c5c5aa6dc01cdf8363946db"
+  },
+  {
+    "path": "senior-python-engineer/reviews/dependency-review.md",
+    "bytes": 9424,
+    "sha256": "84ad0a89d944bdf07a0839764d17e51b98bed486bb889e08e45509627490bfb3"
+  },
+  {
+    "path": "senior-python-engineer/reviews/performance-review.md",
+    "bytes": 9094,
+    "sha256": "53b54eccc6f288ef50a6f0eb883bc09fcba24910ce935329dd93d4fb8a7b33b6"
+  },
+  {
+    "path": "senior-python-engineer/reviews/production-readiness.md",
+    "bytes": 9767,
+    "sha256": "b1554e85a9efd3a37e1b2ac1a31e5dbe5577d8de8f4f4056998cbd03e646aaae"
+  },
+  {
+    "path": "senior-python-engineer/reviews/security-review.md",
+    "bytes": 10177,
+    "sha256": "110b9eda881b377495b3da8f15a6b9a61530edf4af2d416185d5a72c585fc523"
+  },
+  {
+    "path": "senior-python-engineer/reviews/testing-review.md",
+    "bytes": 9334,
+    "sha256": "24d6f26fa3097601a30b2153df675cf5c8776bdd6a1e7eae14f02ba1dd9b7094"
+  },
+  {
+    "path": "senior-python-engineer/templates/architecture-decision-record.md",
+    "bytes": 5557,
+    "sha256": "4342071dd0cb502e3b2bf31230b77d9e30631fcdacede052ee8fc2b22b7c21fd"
+  },
+  {
+    "path": "senior-python-engineer/templates/blueprint.md",
+    "bytes": 7795,
+    "sha256": "23b2627f633ca391a9cbe90ad4dd505b74366e0e694e0d166e9fe6de8cf29744"
+  },
+  {
+    "path": "senior-python-engineer/templates/code-review.md",
+    "bytes": 4765,
+    "sha256": "cc27c80c254088b082d2c752a12c8451d730c0331a8df935c51868367263e832"
+  },
+  {
+    "path": "senior-python-engineer/templates/failure-review.md",
+    "bytes": 5590,
+    "sha256": "70b3ab8fbcc6056ff92e2021ff4ef1e0b8dc9971b7122bf0383fc193068f9b9c"
+  },
+  {
+    "path": "senior-python-engineer/templates/implementation-plan.md",
+    "bytes": 4755,
+    "sha256": "7a39eacc6cdfbd876c2e72f0b3b054697ca8f3b6998ba9f181593dcc7e7e4254"
+  },
+  {
+    "path": "senior-python-engineer/templates/migration-plan.md",
+    "bytes": 8584,
+    "sha256": "bd837b489aaaa4b53ff373ba00d087cad4c77eac2fa93e64a031fbd0edde44e3"
+  },
+  {
+    "path": "senior-python-engineer/templates/performance-investigation.md",
+    "bytes": 6226,
+    "sha256": "5e3078b6fe7c34e1ad6d9fcff93523ae4590a817347eafebf22476e495d5fe1c"
+  },
+  {
+    "path": "senior-python-engineer/templates/production-readiness.md",
+    "bytes": 6350,
+    "sha256": "b2ee5c0980374e99a1589bd37793f194f96a25c6c273feb9dba206f70d3ae00d"
+  }
+]

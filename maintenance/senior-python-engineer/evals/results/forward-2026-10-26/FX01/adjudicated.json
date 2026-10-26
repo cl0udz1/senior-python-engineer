@@ -1,0 +1,96 @@
+{
+  "arm": "C",
+  "artifact_checks_passed": true,
+  "case_id": "FX01",
+  "classification": "public_development",
+  "evidence": {
+    "host_trace": null,
+    "metrics_source": null,
+    "response_sha256": "7ddd941f1433fd93341e7041debe4852b3f9a5ccf9d729e1e999ecd38e8820a4"
+  },
+  "execution": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-I",
+      "-B",
+      "-c",
+      "import json,runpy,sys,types,unittest\nfrom pathlib import Path\nworkspace,target,completion=sys.argv[1:]\nsys.path.insert(0,workspace)\nsys.argv=[target]\nnamespace=runpy.run_path(target,run_name='evaluation_grader')\nmodule=types.ModuleType('evaluation_grader')\nmodule.__dict__.update(namespace)\nsys.modules['evaluation_grader']=module\nsuite=unittest.defaultTestLoader.loadTestsFromModule(module)\nresult=unittest.TextTestRunner(verbosity=1).run(suite)\nsummary={'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'skipped':len(result.skipped),'successful':result.wasSuccessful()}\nPath(completion).write_text(json.dumps(summary),encoding='utf-8')\nsys.exit(0 if result.wasSuccessful() and result.testsRun>len(result.skipped) else 1)\n",
+      "/workspace/scratch/e63a44121a65/implementation/trials/async-regrade",
+      "/workspace/scratch/e63a44121a65/implementation/senior-python-engineer-project/maintenance/senior-python-engineer/evals/graders/FX01.py",
+      "/tmp/skill-eval-grader-lmb5nvru/completion.json"
+    ],
+    "completion_record_present": true,
+    "duration_seconds": 0.11470614900008513,
+    "exit_code": 0,
+    "limitation": "Runs candidate Python; external sandbox, network/process limits and grader-tamper review are caller responsibilities.",
+    "log": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.008s\n\nOK\n",
+    "log_truncated": false,
+    "status": "passed",
+    "test_summary": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "successful": true,
+      "tests_run": 5
+    },
+    "timed_out": false
+  },
+  "family": "async_lifetime",
+  "fixture_hash": "e73d0ec1acf320fa14aee1606a511047a835325a15cc1353365637b4c938d8d8",
+  "graded_utc": "2026-10-26T09:42:14.118111+00:00",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "judgment": {
+    "critical_checks": [],
+    "dimensions": {
+      "correctness": "pass on the visible development task",
+      "evidence_fidelity": "appropriately qualified; author-reported original checks distinguished from independent checks",
+      "proportionality": "pass",
+      "scope": "pass by protected-file snapshots; historical command trace unavailable"
+    },
+    "evidence": [
+      "TASK.md",
+      "solution.py",
+      "response.md",
+      "result.json scope and execution",
+      "../independent-review.md"
+    ],
+    "outcome": "pass",
+    "rationale": "Concurrent startup, required profile, fallback and failure behavior, and awaited cancellation cleanup satisfy the visible contract. Five external grader tests passed; independent reviewer ran ten additional async test methods successfully.",
+    "reviewer": "Independent fresh-context assistant artifact reviewer; root reconciled findings with external grader and before/after snapshots",
+    "run_id": "FX01-C-1-1793007733997691228"
+  },
+  "metrics": {
+    "agent_wall_seconds": null,
+    "cost_usd": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "skill_tokens_loaded": null,
+    "tool_calls": null
+  },
+  "mode": "IMPLEMENT",
+  "model": "inherited",
+  "outcome": "pass",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "protocol_id": "development-forward-2026-10-26",
+  "python": "3.12.14",
+  "run_id": "FX01-C-1-1793007733997691228",
+  "schema_version": 1,
+  "scope": {
+    "changed_files": [
+      "response.md",
+      "solution.py"
+    ],
+    "final_files": {
+      "TASK.md": "8bedeb7a44caa2ced10f7f67e360a3d58d47049cb1eb01e44ac4f64f163972d8",
+      "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+      "response.md": "7ddd941f1433fd93341e7041debe4852b3f9a5ccf9d729e1e999ecd38e8820a4",
+      "solution.py": "d237e01cd37b1ae653c2e6c86fc3b8bc8022ef1a1be71ee4c48c38adb9c6e6ff"
+    },
+    "issues": [],
+    "limitation": "Final snapshots cannot detect temporary reverted edits or unauthorized commands; inspect host traces.",
+    "passed": true
+  },
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1
+}

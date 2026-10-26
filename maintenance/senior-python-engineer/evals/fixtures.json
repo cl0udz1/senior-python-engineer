@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "classification": "public_development",
+  "created": "2026-10-26",
+  "cases": [
+    {
+      "id": "FX01",
+      "family": "async_lifetime",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX01.py",
+      "reference": true
+    },
+    {
+      "id": "FX02",
+      "family": "async_lifetime",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX02.py",
+      "reference": true
+    },
+    {
+      "id": "FX03",
+      "family": "transaction_retry",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX03.py",
+      "reference": true
+    },
+    {
+      "id": "FX04",
+      "family": "remote_outcome",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX04.py",
+      "reference": true
+    },
+    {
+      "id": "FX05",
+      "family": "subtype_contract",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX05.py",
+      "reference": true
+    },
+    {
+      "id": "FX06",
+      "family": "rolling_migration",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX06.py",
+      "reference": true
+    },
+    {
+      "id": "FX07",
+      "family": "subprocess_boundary",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX07.py",
+      "reference": true
+    },
+    {
+      "id": "FX08",
+      "family": "subprocess_boundary",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX08.py",
+      "reference": true
+    },
+    {
+      "id": "FX09",
+      "family": "scope_and_review",
+      "mode": "DESIGN",
+      "risk": "low",
+      "manual_outcome": true,
+      "allowed_changes": [
+        "response.md"
+      ],
+      "grader": null,
+      "reference": false
+    },
+    {
+      "id": "FX10",
+      "family": "scope_and_review",
+      "mode": "REVIEW",
+      "risk": "low",
+      "manual_outcome": true,
+      "allowed_changes": [
+        "response.md"
+      ],
+      "grader": null,
+      "reference": false
+    },
+    {
+      "id": "FX11",
+      "family": "scope_and_review",
+      "mode": "REVIEW",
+      "risk": "low",
+      "manual_outcome": true,
+      "allowed_changes": [
+        "response.md"
+      ],
+      "grader": null,
+      "reference": false
+    },
+    {
+      "id": "FX12",
+      "family": "legacy_fix",
+      "mode": "IMPLEMENT",
+      "risk": "medium",
+      "manual_outcome": false,
+      "allowed_changes": [
+        "solution.py",
+        "response.md"
+      ],
+      "grader": "FX12.py",
+      "reference": true
+    }
+  ]
+}

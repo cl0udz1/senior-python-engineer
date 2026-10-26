@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-26",
+  "claims": [
+    {
+      "id": "SKILL-FORMAT",
+      "claim": "The installed folder matches the metadata name; SKILL.md has nonempty name and description; extra resources are optional and loaded selectively.",
+      "files": ["SKILL.md"],
+      "layer": "STANDARD",
+      "scope": {"specification": "Agent Skills format; host-specific discovery remains separately testable"},
+      "sources": ["https://agentskills.io/specification"],
+      "verified_on": "2026-10-26",
+      "review_after_days": 180,
+      "review_trigger": "Agent Skills format or target-host loading behavior changes"
+    },
+    {
+      "id": "SELECTIVE-READING",
+      "claim": "Use a concise routing entry point and load detailed resources for the current decision; file-size reduction alone is not proof of reduced observed token use.",
+      "files": ["SKILL.md", "core/decision-model.md"],
+      "layer": "HEURISTIC",
+      "scope": {"design": "Project authoring policy informed by published skill guidance"},
+      "sources": ["https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"],
+      "verified_on": "2026-10-26",
+      "review_after_days": 180,
+      "review_trigger": "Observed task traces show missed resources, redundant reads, or higher cost without quality benefit"
+    },
+    {
+      "id": "OUTCOME-EVALUATION",
+      "claim": "Assess task outcomes, artifacts, process constraints, usability, and efficiency separately; deterministic integrity checks do not demonstrate comparative agent-quality gains.",
+      "files": ["SKILL.md", "core/evidence-rules.md"],
+      "layer": "HEURISTIC",
+      "scope": {"evaluation": "Development fixtures and future paired A/B/C runs"},
+      "sources": ["https://developers.openai.com/blog/eval-skills", "https://www.anthropic.com/research/demystifying-evals-for-ai-agents"],
+      "verified_on": "2026-10-26",
+      "review_after_days": 180,
+      "review_trigger": "Model, host, tools, permissions, grader, or supported task population changes"
+    }
+  ]
+}

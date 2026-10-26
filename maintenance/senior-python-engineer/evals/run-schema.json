@@ -1,0 +1,331 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Senior Python Engineer evaluation result v1",
+  "description": "One result per trial. Regrading unchanged artifacts is not a new agent trial. CLI validates its reporting invariants; adapters may validate this full schema.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "case_id",
+    "arm",
+    "trial",
+    "classification",
+    "host",
+    "model",
+    "skill_hash",
+    "protocol_id",
+    "fixture_hash",
+    "harness_hash",
+    "family",
+    "mode",
+    "graded_utc",
+    "python",
+    "platform",
+    "artifact_checks_passed",
+    "outcome",
+    "scope",
+    "execution",
+    "judgment",
+    "metrics",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^FX[0-9]{2}$"
+    },
+    "arm": {
+      "enum": [
+        "dev",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "trial": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "classification": {
+      "const": "public_development"
+    },
+    "host": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "skill_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "protocol_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fixture_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "harness_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "family": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "IMPLEMENT",
+        "DESIGN",
+        "REVIEW"
+      ]
+    },
+    "graded_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "python": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "artifact_checks_passed": {
+      "type": "boolean"
+    },
+    "outcome": {
+      "enum": [
+        "needs_review",
+        "pass",
+        "partial",
+        "fail",
+        "critical"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "passed",
+        "changed_files",
+        "issues",
+        "final_files"
+      ],
+      "properties": {
+        "passed": {
+          "type": "boolean"
+        },
+        "changed_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "final_files": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "error",
+            "not_applicable"
+          ]
+        },
+        "test_summary": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "exit_code": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "judgment": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "run_id",
+        "reviewer",
+        "outcome",
+        "rationale",
+        "evidence"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string"
+        },
+        "reviewer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outcome": {
+          "enum": [
+            "pass",
+            "partial",
+            "fail",
+            "critical"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "critical_checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "category",
+              "trigger",
+              "evidence"
+            ],
+            "properties": {
+              "category": {
+                "enum": [
+                  "C1",
+                  "C2",
+                  "C3",
+                  "C4"
+                ]
+              },
+              "trigger": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "input_tokens": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "skill_tokens_loaded": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "tool_calls": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "agent_wall_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cost_usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "response_sha256",
+        "host_trace",
+        "metrics_source"
+      ],
+      "properties": {
+        "response_sha256": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "host_trace": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metrics_source": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

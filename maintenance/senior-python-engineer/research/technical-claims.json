@@ -1,0 +1,453 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-26",
+  "path_base": "senior-python-engineer/",
+  "notes": [
+    "Source checks cover the listed claims, not every claim in the inherited handbook.",
+    "Local probes ran on CPython 3.12.14/Linux. Windows batch behavior, SQLAlchemy integration, pytest teardown, and Python 3.14/3.15 execution were not run."
+  ],
+  "claims": [
+    {
+      "id": "PY-SUBTYPE",
+      "claim": "A behavioral subtype must not require stronger preconditions or promise weaker postconditions; relevant invariants and history constraints still apply.",
+      "files": [
+        "references/architecture.md",
+        "references/language-semantics.md"
+      ],
+      "layer": "HEURISTIC",
+      "scope": {
+        "topic": "Behavioral subtyping; not merely static assignability"
+      },
+      "sources": [
+        "https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when changing the canonical contract or subtype evaluation expectations.",
+      "validation": "Primary research inspected; contract is a design criterion, not an interpreter feature.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PY-AUGMENTED-ASSIGNMENT",
+      "claim": "__iadd__ may return a different object or NotImplemented; the method does not guarantee in-place mutation.",
+      "files": [
+        "references/language-semantics.md"
+      ],
+      "layer": "LANGUAGE",
+      "scope": {
+        "python": "Documented Python 3.14 data model; reproduced on CPython 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/reference/datamodel.html#object.__iadd__"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when editing operator/protocol guidance.",
+      "validation": "Local probe confirmed fresh result and unchanged original object.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PY-DATA-DESCRIPTOR",
+      "claim": "Defining __set__ or __delete__ makes a descriptor a data descriptor; overriding instance dictionary reads also requires __get__.",
+      "files": [
+        "references/language-semantics.md"
+      ],
+      "layer": "LANGUAGE",
+      "scope": {
+        "python": "Documented Python 3.14 data model; reproduced on CPython 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/reference/datamodel.html#invoking-descriptors"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when changing attribute lookup guidance.",
+      "validation": "Local probes cover get+delete precedence and delete-without-get instance reads.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PY-DECORATOR-TIMING",
+      "claim": "Decorator application occurs when the decorated definition executes; nested definitions can execute after import and repeatedly.",
+      "files": [
+        "references/language-semantics.md"
+      ],
+      "layer": "LANGUAGE",
+      "scope": {
+        "python": "Documented Python 3.14; reproduced on CPython 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/reference/compound_stmts.html#function-definitions"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when changing import-time or decorator guidance.",
+      "validation": "Local probe confirmed nested decorator invocation only when the enclosing call executes.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PY-IMPORT-CACHE",
+      "claim": "Ordinary imports reuse sys.modules entries; reload and other module identities can execute initialization again. Python 3.15 explicit lazy imports may defer initialization.",
+      "files": [
+        "references/language-semantics.md",
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "LANGUAGE",
+      "scope": {
+        "python": "Ordinary imports:3.14 docs/3.12.14 probe; explicit lazy imports:3.15 documentation"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/reference/import.html",
+        "https://docs.python.org/3.15/whatsnew/3.15.html"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when adding import-hook/lazy-import guidance or changing minimum Python.",
+      "validation": "Local ordinary-import/reload probes passed; 3.15 lazy import checked in docs only.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ASYNC-SUSPENSION",
+      "claim": "Awaiting an already-ready operation need not suspend; asyncio.sleep(0) supplies a cooperative checkpoint.",
+      "files": [
+        "references/asyncio-concurrency.md",
+        "reviews/async-review.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "python": "asyncio documented 3.14/3.15; reproduced on CPython 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+        "https://docs.python.org/3.14/library/asyncio-task.html#sleeping"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck if event-loop scheduling guidance or eager execution assumptions change.",
+      "validation": "10,000 immediate awaits did not run a peer; sleep(0) then allowed it.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ASYNC-GATHER-OWNERSHIP",
+      "claim": "gather propagates the first exception without cancelling siblings; an outer timeout that already returned on error does not later clean them up, and cancelling a done gather does not cancel them.",
+      "files": [
+        "catalogs/anti-patterns.md",
+        "core/decision-model.md",
+        "core/python-invariants.md",
+        "references/asyncio-concurrency.md",
+        "reviews/async-review.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "python": "asyncio default return_exceptions=False; documented 3.14, reproduced 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/library/asyncio-task.html#asyncio.gather"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on asyncio API changes or changes to fallback/ownership cases.",
+      "validation": "Local early-error-before-timeout probe left sibling pending; explicit cancellation and join cleaned it up.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ASYNC-EXCEPTION-GROUP",
+      "claim": "TaskGroup normally groups child failures; except* matches members, while ordinary except ExceptionGroup handles the group and propagation is valid.",
+      "files": [
+        "core/decision-model.md",
+        "core/python-invariants.md",
+        "references/asyncio-concurrency.md",
+        "reviews/async-review.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "python": "TaskGroup Python 3.11+; documented 3.14/reproduced 3.12.14"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/library/asyncio-task.html#task-groups",
+        "https://docs.python.org/3.14/reference/compound_stmts.html#except-star"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on TaskGroup exception-policy changes.",
+      "validation": "Ordinary except ExceptionGroup caught the grouped child failure in a local probe.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ASYNC-CAPACITY",
+      "claim": "Structured task lifetime does not cap task count; a semaphore caps holders but not waiting tasks, so growing work needs an admission/pending-work policy.",
+      "files": [
+        "catalogs/anti-patterns.md",
+        "catalogs/failure-modes.md",
+        "core/decision-model.md",
+        "core/python-invariants.md",
+        "references/asyncio-concurrency.md",
+        "reviews/async-review.md"
+      ],
+      "layer": "HEURISTIC",
+      "scope": {
+        "python": "asyncio; application capacity invariant"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/library/asyncio-task.html#task-groups",
+        "https://docs.python.org/3.14/library/asyncio-sync.html#semaphore"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when changing queue/fan-out recommendations.",
+      "validation": "A local probe created 50 pending tasks behind a semaphore with one holder; all were joined.",
+      "review_after_days": 180
+    },
+    {
+      "id": "CONCURRENCY-CONFINEMENT",
+      "claim": "A multi-statement operation confined to one loop thread need not lock when it cannot suspend, re-enter, or race outside thread access; thread-shared operations need their own ownership argument.",
+      "files": [
+        "core/python-invariants.md",
+        "references/asyncio-concurrency.md",
+        "reviews/concurrency-review.md"
+      ],
+      "layer": "HEURISTIC",
+      "scope": {
+        "python": "Cooperative asyncio task interleaving; explicit assumptions exclude threads and reentrancy"
+      },
+      "sources": [
+        "https://docs.python.org/3/howto/a-conceptual-overview-of-asyncio.html",
+        "https://docs.python.org/3.15/library/asyncio-threading.html"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck whenever concurrency domain or callback/reentrancy assumptions change.",
+      "validation": "Local 8-task confined counter probe preserved 800 updates; not a proof for arbitrary callbacks or threads.",
+      "review_after_days": 180
+    },
+    {
+      "id": "SEC-WINDOWS-BATCH",
+      "claim": "Windows .bat/.cmd launch may invoke a system shell even with shell=False; native argv defaults and batch-file escaping require different analysis.",
+      "files": [
+        "playbooks/cli-automation.md",
+        "playbooks/security-automation.md",
+        "references/security.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "platform": "Windows batch launch; native executable argv recommendation separately scoped",
+        "python": "subprocess3.14 documentation"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/library/subprocess.html#security-considerations"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck for subprocess security updates or a changed wrapper/executable.",
+      "validation": "Official caveat inspected. Linux native argument-data probe passed; Windows batch behavior not executed.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ORM-RELATIONSHIP-LOADERS",
+      "claim": "SQLAlchemy 2.0 noload can return unloaded None/empty state, while raiseload raises on unexpected access; raiseload does not prevent every unit-of-work flush load.",
+      "files": [
+        "references/modern-python-baseline.md",
+        "references/persistence.md"
+      ],
+      "layer": "FRAMEWORK",
+      "scope": {
+        "framework": "SQLAlchemy 2.0; match installed version before generating code"
+      },
+      "sources": [
+        "https://docs.sqlalchemy.org/en/20/orm/queryguide/relationships.html#preventing-unwanted-lazy-loads-using-raiseload",
+        "https://docs.sqlalchemy.org/en/20/orm/queryguide/relationships.html#sqlalchemy.orm.noload"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when upgrading SQLAlchemy or editing loader fixtures.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PROCESS-CONTEXT",
+      "claim": "multiprocessing.Process has no start_method keyword; use a selected context. Fork is not the default on any platform from Python 3.14.",
+      "files": [
+        "core/decision-model.md",
+        "references/modern-python-baseline.md",
+        "references/persistence.md",
+        "reviews/database-review.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "python": "API documented 3.14; spawn reproduced 3.12.14; defaults version/platform dependent"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/library/multiprocessing.html#contexts-and-start-methods"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck for Python/platform upgrades or changed worker lifecycle.",
+      "validation": "A selected spawn context started and joined a real child process on Linux 3.12.14.",
+      "review_after_days": 180
+    },
+    {
+      "id": "ORM-POOL-FORK",
+      "claim": "Parent and child must not reuse the same live pooled DB connections across fork; create worker pools or use the documented child dispose(close=False) pattern.",
+      "files": [
+        "references/persistence.md",
+        "reviews/database-review.md"
+      ],
+      "layer": "FRAMEWORK",
+      "scope": {
+        "framework": "SQLAlchemy 2.0; forked process lifecycle"
+      },
+      "sources": [
+        "https://docs.sqlalchemy.org/en/20/core/pooling.html#using-connection-pools-with-multiprocessing-or-os-fork"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on SQLAlchemy/process-model changes.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PYTEST-PARTIAL-SETUP",
+      "claim": "Cleanup after yield is not executed when fixture setup fails before yielding; an immediately registered finalizer or ExitStack can handle already acquired resources.",
+      "files": [
+        "references/testing.md"
+      ],
+      "layer": "FRAMEWORK",
+      "scope": {
+        "framework": "pytest fixture setup/teardown contract; installed version should be checked"
+      },
+      "sources": [
+        "https://docs.pytest.org/en/stable/how-to/fixtures.html#safe-teardowns",
+        "https://docs.pytest.org/en/stable/how-to/fixtures.html#adding-finalizers-directly"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on pytest upgrades affecting fixture behavior or cleanup example changes.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PY-RELEASE-STATUS",
+      "claim": "Official pages show Python 3.15.2 and3.14.10 released 2026-10-25;3.15/3.14 are bugfix branches,3.13-3.11 security branches,3.10 upstream end of life.",
+      "files": [
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "CPYTHON",
+      "scope": {
+        "as_of": "2026-10-26",
+        "policy": "Upstream snapshot, not required repository version"
+      },
+      "sources": [
+        "https://www.python.org/downloads/release/python-3152/",
+        "https://www.python.org/downloads/release/python-31410/",
+        "https://devguide.python.org/versions/"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck at any upgrade/deployment/security recommendation, new release, or support deadline.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 30
+    },
+    {
+      "id": "PY-INTERPRETER-CAPABILITIES",
+      "claim": "3.14 adds deferred annotations and concurrent.interpreters, supports optional free threading, and reverts incremental GC in3.14.5;3.15 adds abi3t and documented language features while still describing JIT as experimental.",
+      "files": [
+        "playbooks/ai-ml.md",
+        "playbooks/production-service.md",
+        "references/asyncio-concurrency.md",
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "CPYTHON",
+      "scope": {
+        "python": "Per-feature3.14/3.15 scope in runtime table; no universal build compatibility claim"
+      },
+      "sources": [
+        "https://docs.python.org/3.14/whatsnew/3.14.html",
+        "https://docs.python.org/3.15/whatsnew/3.15.html",
+        "https://docs.python.org/3.15/howto/free-threading-python.html",
+        "https://docs.python.org/3.15/library/asyncio-threading.html"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck for interpreter/build upgrades or a feature-status change.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "SEC-ARCHIVE-FILTERS",
+      "claim": "tarfile defaults to data filtering from3.14, but filtering does not establish a complete sandbox or resource cap and does not describe zipfile behavior.",
+      "files": [
+        "references/modern-python-baseline.md",
+        "references/security.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "python": "tarfile3.14+ default; patched implementation and distributor advisories still matter"
+      },
+      "sources": [
+        "https://docs.python.org/3.15/library/tarfile.html#extraction-filters"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on archive-security advisories and before accepting hostile archives.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "TOOL-TORCHSERVE",
+      "claim": "TorchServe publishes an end-of-active-maintenance notice with no planned fixes or security patches.",
+      "files": [
+        "references/ai-ml.md",
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "ECOSYSTEM",
+      "scope": {
+        "as_of": "2026-10-26",
+        "framework": "TorchServe published maintenance status"
+      },
+      "sources": [
+        "https://docs.pytorch.org/serve/"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck before selecting a serving platform or reviewing an existing deployment.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 30
+    },
+    {
+      "id": "TOOL-SQLALCHEMY-MYPY",
+      "claim": "SQLAlchemy 2.0 deprecates its mypy plugin and documents compatibility only through mypy 1.10.1; new2.x typed mappings use native APIs.",
+      "files": [
+        "references/modern-python-baseline.md",
+        "references/tooling.md"
+      ],
+      "layer": "FRAMEWORK",
+      "scope": {
+        "framework": "SQLAlchemy 2.0 plugin documentation; legacy pins require separate assessment"
+      },
+      "sources": [
+        "https://docs.sqlalchemy.org/en/20/orm/extensions/mypy.html"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on ORM/type-checker upgrades or plugin/mapping migration.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 30
+    },
+    {
+      "id": "TORCH-LOAD-POLICY",
+      "claim": "PyTorch 2.14 torch.load defaults to weights_only=True; FORCE_NO override affects omitted arguments only, and restricted loading does not make untrusted files safe.",
+      "files": [
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "FRAMEWORK",
+      "scope": {
+        "framework": "PyTorch 2.14 docs, checked 2026-10-26"
+      },
+      "sources": [
+        "https://docs.pytorch.org/docs/2.14/generated/torch.load.html",
+        "https://docs.pytorch.org/docs/2.14/notes/serialization.html"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck on PyTorch updates, environment-policy changes, or checkpoint-loading edits.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    },
+    {
+      "id": "PACKAGING-PYLOCK",
+      "claim": "pylock.toml is a standardized format; pinned tool import/export support remains a separate compatibility question.",
+      "files": [
+        "references/modern-python-baseline.md"
+      ],
+      "layer": "STANDARD",
+      "scope": {
+        "specification": "PyPA pylock.toml; frontend behavior intentionally not universally asserted"
+      },
+      "sources": [
+        "https://packaging.python.org/en/latest/specifications/pylock-toml/"
+      ],
+      "verified_on": "2026-10-26",
+      "review_trigger": "Recheck when changing lock interchange or the pinned packaging frontend.",
+      "validation": "Primary documentation inspected; no library integration run.",
+      "review_after_days": 180
+    }
+  ]
+}

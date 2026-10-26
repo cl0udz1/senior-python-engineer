@@ -1,0 +1,36 @@
+{
+  "runtime": "CPython 3.12.14",
+  "platform": "linux",
+  "python_build": [
+    "main",
+    "Aug 25 2026 14:00:49"
+  ],
+  "passed": 19,
+  "results": {
+    "immediate_await_does_not_force_suspension": true,
+    "sleep_zero_allows_peer": true,
+    "early_gather_error_leaves_sibling_pending": true,
+    "cancel_done_gather_does_not_cancel_sibling": true,
+    "explicit_gather_cleanup_joins_child": true,
+    "ordinary_except_can_catch_whole_exception_group": true,
+    "semaphore_limits_holders_not_pending_tasks": true,
+    "loop_confined_update_without_internal_suspension": true,
+    "no_pending_children_after_probes": true,
+    "iadd_can_return_new_object_without_mutating_original": true,
+    "delete_descriptor_with_get_overrides_instance": true,
+    "data_descriptor_without_get_does_not_override_read": true,
+    "nested_decorator_waits_for_definition_execution": true,
+    "nested_decorator_runs_each_definition": true,
+    "ordinary_import_reuses_cached_module": true,
+    "reload_reexecutes_module_body": true,
+    "native_executable_argument_is_data": true,
+    "context_process_executes": true,
+    "context_process_joins": true
+  },
+  "not_executed": [
+    "Windows batch launch behavior",
+    "SQLAlchemy relationship loader integration",
+    "pytest teardown integration"
+  ],
+  "coverage_limit": "This run covers only the reported interpreter/build/platform; it is not a compatibility matrix."
+}

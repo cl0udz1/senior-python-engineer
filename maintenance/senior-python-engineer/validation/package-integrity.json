@@ -1,0 +1,293 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "files": 55,
+    "markdown_files": 54,
+    "bytes": 633743,
+    "words": 82161,
+    "entry_lines": 146,
+    "entry_words": 1195,
+    "entry_bytes": 10130,
+    "local_links_checked": 1817,
+    "note": "File sizes and whitespace word counts; not model tokens or observed retrieval cost."
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 10130,
+      "sha256": "1cdab4b729812ca27c98dfd2151e952d5bf5caf965ad36f85a83b6441bb295ec"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 271,
+      "sha256": "e59dd8009a6bc36b434ea24811425b0d823d61b61384bffe930e391da6127478"
+    },
+    {
+      "path": "catalogs/anti-patterns.md",
+      "bytes": 37195,
+      "sha256": "83de9804ed570212346b619dbe46d91b4d8609680f68fa245bac9ab35b1ad722"
+    },
+    {
+      "path": "catalogs/failure-modes.md",
+      "bytes": 21862,
+      "sha256": "ea0273bad16c99a2b9bf93e55f1059a7677e00e8f4e898daddb8246604cae6aa"
+    },
+    {
+      "path": "catalogs/smells.md",
+      "bytes": 16990,
+      "sha256": "cc651157d8053d8b31b5cf90fdf7537f2cef316862e51b9a85a8f7334bf56fd7"
+    },
+    {
+      "path": "core/decision-model.md",
+      "bytes": 20119,
+      "sha256": "01bccacef1f115365081978f887e5770fee1cdfca83651a9fd7a4312937eeed8"
+    },
+    {
+      "path": "core/engineering-principles.md",
+      "bytes": 9972,
+      "sha256": "e12a9b2784afe9164a5c9c638a12b14027f13146c55fe0e903168dd4113e3f1b"
+    },
+    {
+      "path": "core/evidence-rules.md",
+      "bytes": 8865,
+      "sha256": "2831b79577047763366ec721df4379fe3fc7bb32be36cb79d30c9a7026cc0b22"
+    },
+    {
+      "path": "core/python-invariants.md",
+      "bytes": 13735,
+      "sha256": "007254f6a1e297350944f4a61963fd4baceeefe60478e912343a5e10af1ee8fe"
+    },
+    {
+      "path": "playbooks/ai-ml.md",
+      "bytes": 14189,
+      "sha256": "8b93c6b20445de71fde1dd42e1871d9b74cd46116ab9a63b33ea255ba5f9c026"
+    },
+    {
+      "path": "playbooks/backend-application.md",
+      "bytes": 15294,
+      "sha256": "0c347b5a10e3408871b5dfaa61690368195bc06d0fb3ee306e0e94153aed8ad8"
+    },
+    {
+      "path": "playbooks/cli-automation.md",
+      "bytes": 13288,
+      "sha256": "671160a2f4b4420d33a0883993035b10036896ffe981a602f18316e6fdb16507"
+    },
+    {
+      "path": "playbooks/data-engineering.md",
+      "bytes": 13511,
+      "sha256": "7622edb2957caa2a47413aab48c6175f6e071a6b6b4e7f64922ee8edad2b1fda"
+    },
+    {
+      "path": "playbooks/existing-codebase.md",
+      "bytes": 12448,
+      "sha256": "a1d2ff535f85fdfd2d189be63f2b6e717d123031b32ea7e2c668d3237135f371"
+    },
+    {
+      "path": "playbooks/greenfield-project.md",
+      "bytes": 15659,
+      "sha256": "3e99c1d439d8e2f854ec0a90c924eb9dcaaf86f5f5c76b59b7a79cdb167fd2d4"
+    },
+    {
+      "path": "playbooks/library-package.md",
+      "bytes": 14150,
+      "sha256": "649bfd6fe19bdf97a55798824aad90c99614e6dc8aba1212f04e77266a66c7e8"
+    },
+    {
+      "path": "playbooks/llm-agentic.md",
+      "bytes": 15502,
+      "sha256": "e3bb5ee56de6cbfd05fd8b25c734f8ca5ea2fd69c53ae083d9adeb38b3f10a67"
+    },
+    {
+      "path": "playbooks/production-service.md",
+      "bytes": 14000,
+      "sha256": "e7755e1b0f409a0503f1c4007c900a312a89c1ae4983544579dd39fd950d9306"
+    },
+    {
+      "path": "playbooks/security-automation.md",
+      "bytes": 14251,
+      "sha256": "a5acbe6f4a2531c2e4155fd4a81b837fcfd34f8bfee3ad773af331aec5b8d313"
+    },
+    {
+      "path": "playbooks/web-api.md",
+      "bytes": 14664,
+      "sha256": "e0287db1fb1b419a65f944ffa2f804e533d1148e4d71f4168c25c96ce227b942"
+    },
+    {
+      "path": "playbooks/workers-jobs.md",
+      "bytes": 13408,
+      "sha256": "c7b6f5afd58cd167c993080d8c694717817ea638acfa62e60c514d09f0216e20"
+    },
+    {
+      "path": "references/ai-ml.md",
+      "bytes": 9495,
+      "sha256": "64bdc261fc6b77675b7892814d8fab75d021eb9ad012a622cb21000336994a40"
+    },
+    {
+      "path": "references/architecture.md",
+      "bytes": 14637,
+      "sha256": "e96070bb923d71e5f84ed8566a3fb35a82f47ec2fc38a3267525aa235c75a5fe"
+    },
+    {
+      "path": "references/asyncio-concurrency.md",
+      "bytes": 13372,
+      "sha256": "a1bef3ba903cf3813456f909434b834e0edbbdb89038440877ce6aa40bb5e93f"
+    },
+    {
+      "path": "references/deployment.md",
+      "bytes": 10082,
+      "sha256": "e1d03984a17a016f6648c5530a571f2c2d1177ec99757a56e7f97f5d483aa26c"
+    },
+    {
+      "path": "references/language-semantics.md",
+      "bytes": 13415,
+      "sha256": "df66818fda3a0f62d5c2af12686436ef34f7fd61f98d6c94e28a635460ab1003"
+    },
+    {
+      "path": "references/modern-python-baseline.md",
+      "bytes": 9083,
+      "sha256": "52b473507791ee5d564de7451928af8b673231cb5dd5cd8d903a0b54f58f4eaf"
+    },
+    {
+      "path": "references/observability.md",
+      "bytes": 8918,
+      "sha256": "e80f00d7e09239e48ae09939523d19729d35107eb1ebddd9ef63acc8b833d270"
+    },
+    {
+      "path": "references/packaging.md",
+      "bytes": 8899,
+      "sha256": "46d4c5f6029d7d8b17ee8e7496324b2570101b9454e8e265c04a4de2b892fb20"
+    },
+    {
+      "path": "references/performance.md",
+      "bytes": 10193,
+      "sha256": "ed812a27214b2b60f0ea2ecb96c1b06c43e2c39f37a9520a893c26edd537ec1d"
+    },
+    {
+      "path": "references/persistence.md",
+      "bytes": 11118,
+      "sha256": "05fbca7d0c395acb0318cd74fa800ce78136697d6183e1f39ab3275745fd05a8"
+    },
+    {
+      "path": "references/reliability.md",
+      "bytes": 9412,
+      "sha256": "c404c517bb8fc0fa33eefecddf6526f6fc754c8fdf535aecbc9449b79712e222"
+    },
+    {
+      "path": "references/security.md",
+      "bytes": 14015,
+      "sha256": "112b10b9067598a3545de61f9bff7a40aab8c12b8fdbc9363059f28d3abc4e49"
+    },
+    {
+      "path": "references/testing.md",
+      "bytes": 10783,
+      "sha256": "8836a01903177bc6e086dcc39eafcc7b9730aed024087673327d2c425e98a460"
+    },
+    {
+      "path": "references/tooling.md",
+      "bytes": 9387,
+      "sha256": "c36742764511f7b7b826eb361db4f6f8d27ed396f9fb8c36bef8ec052278accc"
+    },
+    {
+      "path": "references/typing.md",
+      "bytes": 12193,
+      "sha256": "46c3d7c7366d0f55bca2573257a5f38915d4d65b3f93b7650f27f623684f2dbb"
+    },
+    {
+      "path": "references/web-frameworks.md",
+      "bytes": 8738,
+      "sha256": "13baf571ec02f8195faba0c5f500e7c624e32fceeb0cc12bc550bcd286e00726"
+    },
+    {
+      "path": "reviews/architecture-review.md",
+      "bytes": 10681,
+      "sha256": "ed0a436dbae10dbbd7f86b0606949ecce81929ea88ff50ca0cee8d4403b4b184"
+    },
+    {
+      "path": "reviews/async-review.md",
+      "bytes": 11061,
+      "sha256": "aecdd41d0baecc82892eba6684befd25eba6a2bd7dc0f24ebbe2724220958c2b"
+    },
+    {
+      "path": "reviews/code-review.md",
+      "bytes": 11481,
+      "sha256": "62df44fa1efad8657261bac70f96e70c56e0f15a8ed54120932720c4d35683bf"
+    },
+    {
+      "path": "reviews/concurrency-review.md",
+      "bytes": 9783,
+      "sha256": "9aeaecd3a7284597db5e94fa34110ceaec848a3345bd98dfada569f6cb999a90"
+    },
+    {
+      "path": "reviews/database-review.md",
+      "bytes": 10076,
+      "sha256": "cae93ac7f9a92f934bfa92250e0ca0f365ec7c8f2c5c5aa6dc01cdf8363946db"
+    },
+    {
+      "path": "reviews/dependency-review.md",
+      "bytes": 9424,
+      "sha256": "84ad0a89d944bdf07a0839764d17e51b98bed486bb889e08e45509627490bfb3"
+    },
+    {
+      "path": "reviews/performance-review.md",
+      "bytes": 9094,
+      "sha256": "53b54eccc6f288ef50a6f0eb883bc09fcba24910ce935329dd93d4fb8a7b33b6"
+    },
+    {
+      "path": "reviews/production-readiness.md",
+      "bytes": 9767,
+      "sha256": "b1554e85a9efd3a37e1b2ac1a31e5dbe5577d8de8f4f4056998cbd03e646aaae"
+    },
+    {
+      "path": "reviews/security-review.md",
+      "bytes": 10177,
+      "sha256": "110b9eda881b377495b3da8f15a6b9a61530edf4af2d416185d5a72c585fc523"
+    },
+    {
+      "path": "reviews/testing-review.md",
+      "bytes": 9334,
+      "sha256": "24d6f26fa3097601a30b2153df675cf5c8776bdd6a1e7eae14f02ba1dd9b7094"
+    },
+    {
+      "path": "templates/architecture-decision-record.md",
+      "bytes": 5557,
+      "sha256": "4342071dd0cb502e3b2bf31230b77d9e30631fcdacede052ee8fc2b22b7c21fd"
+    },
+    {
+      "path": "templates/blueprint.md",
+      "bytes": 7795,
+      "sha256": "23b2627f633ca391a9cbe90ad4dd505b74366e0e694e0d166e9fe6de8cf29744"
+    },
+    {
+      "path": "templates/code-review.md",
+      "bytes": 4765,
+      "sha256": "cc27c80c254088b082d2c752a12c8451d730c0331a8df935c51868367263e832"
+    },
+    {
+      "path": "templates/failure-review.md",
+      "bytes": 5590,
+      "sha256": "70b3ab8fbcc6056ff92e2021ff4ef1e0b8dc9971b7122bf0383fc193068f9b9c"
+    },
+    {
+      "path": "templates/implementation-plan.md",
+      "bytes": 4755,
+      "sha256": "7a39eacc6cdfbd876c2e72f0b3b054697ca8f3b6998ba9f181593dcc7e7e4254"
+    },
+    {
+      "path": "templates/migration-plan.md",
+      "bytes": 8584,
+      "sha256": "bd837b489aaaa4b53ff373ba00d087cad4c77eac2fa93e64a031fbd0edde44e3"
+    },
+    {
+      "path": "templates/performance-investigation.md",
+      "bytes": 6226,
+      "sha256": "5e3078b6fe7c34e1ad6d9fcff93523ae4590a817347eafebf22476e495d5fe1c"
+    },
+    {
+      "path": "templates/production-readiness.md",
+      "bytes": 6350,
+      "sha256": "b2ee5c0980374e99a1589bd37793f194f96a25c6c273feb9dba206f70d3ae00d"
+    }
+  ]
+}

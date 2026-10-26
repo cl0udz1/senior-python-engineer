@@ -1,0 +1,21 @@
+{
+  "arm": "C",
+  "case_id": "FX10",
+  "classification": "public_development",
+  "created_utc": "2026-10-26T09:40:31.184122+00:00",
+  "fixture_hash": "a523d0f32701d358ed758f673be3d70d873f7e26a7ce920379c785b63545ed90",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "initial_files": {
+    "TASK.md": "d86f9c5a3d90d894f055d67a548a285077d5641d4afce8bc9f74b037fb38bea2",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "2e0565dca14228e6eff00b907ac92b3f377058bf3f783e6e28021837d4361005"
+  },
+  "model": "inherited",
+  "protocol_id": "development-forward-2026-10-26",
+  "run_id": "FX10-C-1-1793007631184116673",
+  "schema_version": 1,
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1,
+  "workspace": "/workspace/scratch/e63a44121a65/implementation/trials/review"
+}

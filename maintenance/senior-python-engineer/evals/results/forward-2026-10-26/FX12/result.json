@@ -1,0 +1,77 @@
+{
+  "arm": "C",
+  "artifact_checks_passed": true,
+  "case_id": "FX12",
+  "classification": "public_development",
+  "evidence": {
+    "host_trace": null,
+    "metrics_source": null,
+    "response_sha256": "cf717dbb95dd994b7cb3bbcb60aaffb339b6233c7086709c5a15bfd6f5270c68"
+  },
+  "execution": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-I",
+      "-B",
+      "-c",
+      "import json,runpy,sys,types,unittest\nfrom pathlib import Path\nworkspace,target,completion=sys.argv[1:]\nsys.path.insert(0,workspace)\nsys.argv=[target]\nnamespace=runpy.run_path(target,run_name='evaluation_grader')\nmodule=types.ModuleType('evaluation_grader')\nmodule.__dict__.update(namespace)\nsys.modules['evaluation_grader']=module\nsuite=unittest.defaultTestLoader.loadTestsFromModule(module)\nresult=unittest.TextTestRunner(verbosity=1).run(suite)\nsummary={'tests_run':result.testsRun,'failures':len(result.failures),'errors':len(result.errors),'skipped':len(result.skipped),'successful':result.wasSuccessful()}\nPath(completion).write_text(json.dumps(summary),encoding='utf-8')\nsys.exit(0 if result.wasSuccessful() and result.testsRun>len(result.skipped) else 1)\n",
+      "/workspace/scratch/e63a44121a65/implementation/trials/legacy",
+      "/workspace/scratch/e63a44121a65/implementation/senior-python-engineer-project/maintenance/senior-python-engineer/evals/graders/FX12.py",
+      "/tmp/skill-eval-grader-5ioehdix/completion.json"
+    ],
+    "completion_record_present": true,
+    "duration_seconds": 0.06448924199958128,
+    "exit_code": 0,
+    "limitation": "Runs candidate Python; external sandbox, network/process limits and grader-tamper review are caller responsibilities.",
+    "log": "..\n----------------------------------------------------------------------\nRan 2 tests in 0.000s\n\nOK\n",
+    "log_truncated": false,
+    "status": "passed",
+    "test_summary": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "successful": true,
+      "tests_run": 2
+    },
+    "timed_out": false
+  },
+  "family": "legacy_fix",
+  "fixture_hash": "56c35bf0bf5c097bd7bdadaa550d4f56760c384ab93b4a10c6f00afd23b99221",
+  "graded_utc": "2026-10-26T09:42:14.185611+00:00",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "judgment": null,
+  "metrics": {
+    "agent_wall_seconds": null,
+    "cost_usd": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "skill_tokens_loaded": null,
+    "tool_calls": null
+  },
+  "mode": "IMPLEMENT",
+  "model": "inherited",
+  "outcome": "needs_review",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "protocol_id": "development-forward-2026-10-26",
+  "python": "3.12.14",
+  "run_id": "FX12-C-1-1793007631296690189",
+  "schema_version": 1,
+  "scope": {
+    "changed_files": [
+      "response.md",
+      "solution.py"
+    ],
+    "final_files": {
+      "TASK.md": "ef44d0c16252d91cb9e9db5af0a4052757b0c3244d7fd85db5c2a461bd36d875",
+      "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+      "response.md": "cf717dbb95dd994b7cb3bbcb60aaffb339b6233c7086709c5a15bfd6f5270c68",
+      "solution.py": "7db2457394782eb43b800e45c0ba6432ee615f35a48a49c579af72abcc8476af"
+    },
+    "issues": [],
+    "limitation": "Final snapshots cannot detect temporary reverted edits or unauthorized commands; inspect host traces.",
+    "passed": true
+  },
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1
+}

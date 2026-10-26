@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "classification": "public_development",
+  "measurement": "Actual host discovery/trace required; no activation inference from answer wording",
+  "cases": [
+    {
+      "id": "TR01",
+      "prompt": "Review this Python async service for cancellation and transaction ownership problems.",
+      "invocation": "implicit",
+      "expected": "activate"
+    },
+    {
+      "id": "TR02",
+      "prompt": "Design a Python importer with crash-safe replay and two entry points.",
+      "invocation": "implicit",
+      "expected": "activate"
+    },
+    {
+      "id": "TR03",
+      "prompt": "Use $senior-python-engineer to assess this Python public API contract.",
+      "invocation": "explicit",
+      "expected": "activate"
+    },
+    {
+      "id": "TR04",
+      "prompt": "In this Python file, rename local variable total to subtotal; no behavior change.",
+      "invocation": "implicit",
+      "expected": "do_not_activate"
+    },
+    {
+      "id": "TR05",
+      "prompt": "What does len([1, 2, 3]) return?",
+      "invocation": "implicit",
+      "expected": "do_not_activate"
+    },
+    {
+      "id": "TR06",
+      "prompt": "Write a short birthday greeting.",
+      "invocation": "implicit",
+      "expected": "do_not_activate"
+    },
+    {
+      "id": "TR07",
+      "prompt": "Fix the CSS padding on this landing page.",
+      "invocation": "implicit",
+      "expected": "do_not_activate"
+    },
+    {
+      "id": "TR08",
+      "prompt": "Our Python worker may charge a customer twice after a timeout. Investigate and fix it.",
+      "invocation": "implicit",
+      "expected": "activate"
+    },
+    {
+      "id": "TR09",
+      "prompt": "Make this function faster.",
+      "invocation": "implicit",
+      "expected": "ambiguous",
+      "note": "Language, artifact, and evidence determine whether this skill adds value; do not score absent context as certain."
+    },
+    {
+      "id": "TR10",
+      "prompt": "Compare FastAPI request lifecycle and our existing Django deployment before choosing a migration.",
+      "invocation": "implicit",
+      "expected": "activate",
+      "competing_skills": "If installed, record overlaps with framework-specific skills rather than forcing exclusive use."
+    }
+  ]
+}

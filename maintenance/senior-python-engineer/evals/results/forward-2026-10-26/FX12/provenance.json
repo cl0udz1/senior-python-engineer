@@ -1,0 +1,20 @@
+{
+  "kind": "development_agent_trial",
+  "case_id": "FX12",
+  "fresh_context": true,
+  "candidate_version_label_given_to_artifact_reviewer": false,
+  "read_access_limit": "Task-local read instructions; shared filesystem, not an OS-enforced inaccessible holdout",
+  "resources_read": "Agent-reported resource list; section reads are not token measurements",
+  "skill_resources": [
+    "SKILL.md",
+    "playbooks/existing-codebase.md",
+    "core/python-invariants.md (sections)"
+  ],
+  "telemetry": "No authoritative token/cost/complete host trace captured; those result metrics remain null",
+  "artifact_hashes": {
+    "TASK.md": "ef44d0c16252d91cb9e9db5af0a4052757b0c3244d7fd85db5c2a461bd36d875",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "7db2457394782eb43b800e45c0ba6432ee615f35a48a49c579af72abcc8476af",
+    "response.md": "cf717dbb95dd994b7cb3bbcb60aaffb339b6233c7086709c5a15bfd6f5270c68"
+  }
+}

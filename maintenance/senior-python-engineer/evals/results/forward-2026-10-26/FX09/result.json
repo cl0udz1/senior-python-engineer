@@ -1,0 +1,53 @@
+{
+  "arm": "C",
+  "artifact_checks_passed": true,
+  "case_id": "FX09",
+  "classification": "public_development",
+  "evidence": {
+    "host_trace": null,
+    "metrics_source": null,
+    "response_sha256": "e16708ba68de5b1f7c2564a135a682898008976e7cfe9532e4dd85354ae90fc9"
+  },
+  "execution": {
+    "reason": "Design/review correctness requires adjudication",
+    "status": "not_applicable"
+  },
+  "family": "scope_and_review",
+  "fixture_hash": "88ebcf414cac9fff36149cda81cdbe8735ea01b8fedd15dd019dc7eb72a51a99",
+  "graded_utc": "2026-10-26T09:42:14.000409+00:00",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "judgment": null,
+  "metrics": {
+    "agent_wall_seconds": null,
+    "cost_usd": null,
+    "input_tokens": null,
+    "output_tokens": null,
+    "skill_tokens_loaded": null,
+    "tool_calls": null
+  },
+  "mode": "DESIGN",
+  "model": "inherited",
+  "outcome": "needs_review",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "protocol_id": "development-forward-2026-10-26",
+  "python": "3.12.14",
+  "run_id": "FX09-C-1-1793007733995131187",
+  "schema_version": 1,
+  "scope": {
+    "changed_files": [
+      "response.md"
+    ],
+    "final_files": {
+      "TASK.md": "fae1e27175dd973dcb0345975f04f1fcaa61816504b524b589a1835697bba277",
+      "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+      "response.md": "e16708ba68de5b1f7c2564a135a682898008976e7cfe9532e4dd85354ae90fc9",
+      "solution.py": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849"
+    },
+    "issues": [],
+    "limitation": "Final snapshots cannot detect temporary reverted edits or unauthorized commands; inspect host traces.",
+    "passed": true
+  },
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1
+}

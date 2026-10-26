@@ -1,0 +1,34 @@
+{
+  "kind": "development_agent_trial",
+  "case_id": "FX09",
+  "fresh_context": true,
+  "candidate_version_label_given_to_artifact_reviewer": false,
+  "read_access_limit": "Task-local read instructions; shared filesystem, not an OS-enforced inaccessible holdout",
+  "resources_read": "Agent-reported resource list; section reads are not token measurements",
+  "skill_resources": [
+    "SKILL.md",
+    "playbooks/backend-application.md",
+    "core/decision-model.md (sections)",
+    "core/python-invariants.md (sections)",
+    "references/persistence.md (sections)"
+  ],
+  "telemetry": "No authoritative token/cost/complete host trace captured; those result metrics remain null",
+  "artifact_hashes": {
+    "TASK.md": "fae1e27175dd973dcb0345975f04f1fcaa61816504b524b589a1835697bba277",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849",
+    "response.md": "e16708ba68de5b1f7c2564a135a682898008976e7cfe9532e4dd85354ae90fc9"
+  },
+  "artifact_regrade": {
+    "kind": "artifact_regrade_not_new_agent_trial",
+    "original_run_id": "FX09-C-1-1793007399449811536",
+    "original_harness_hash": "e2c4234026cda94ef49772f3e6841a03f57e557ef4ae1e764c14a9b1b2a058b1",
+    "final_harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+    "visible_fixture_unchanged": true,
+    "copied_artifacts": {
+      "solution.py": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849",
+      "response.md": "e16708ba68de5b1f7c2564a135a682898008976e7cfe9532e4dd85354ae90fc9"
+    },
+    "reason": "Grader completion attestation and comparison metadata guards improved after agent task preparation."
+  }
+}

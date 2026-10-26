@@ -1,0 +1,21 @@
+{
+  "arm": "C",
+  "case_id": "FX09",
+  "classification": "public_development",
+  "created_utc": "2026-10-26T09:42:13.995136+00:00",
+  "fixture_hash": "88ebcf414cac9fff36149cda81cdbe8735ea01b8fedd15dd019dc7eb72a51a99",
+  "harness_hash": "e9e42ac984c02b1c64b8ae2ec0694dbecbf852cf29c51aedb6096a8abf9615bf",
+  "host": "ChatGPT-subagent",
+  "initial_files": {
+    "TASK.md": "fae1e27175dd973dcb0345975f04f1fcaa61816504b524b589a1835697bba277",
+    "project.txt": "d059f6390b22e95bf9fe1f2c4d643e351da69f361a541ae56278ff9f63f8c206",
+    "solution.py": "50c1f587ba677d1a176cd16a286a9149b635283561fc8917e8a3d53c5fafb849"
+  },
+  "model": "inherited",
+  "protocol_id": "development-forward-2026-10-26",
+  "run_id": "FX09-C-1-1793007733995131187",
+  "schema_version": 1,
+  "skill_hash": "0529d391adefdd86cc5a4c407128d893f118893e84967e56097f429f85476980",
+  "trial": 1,
+  "workspace": "/workspace/scratch/e63a44121a65/implementation/trials/design-regrade"
+}

@@ -1,0 +1,563 @@
+{
+  "classification": "public_development_pilot",
+  "conditions": {
+    "A": "No skill",
+    "B": "Original v1.4.0 as distributed, including old public eval cases; only normalize enclosing folder if host requires, and record it",
+    "C": "Revised v1.5.0 runtime distribution"
+  },
+  "distinct_tasks": 12,
+  "heldout": false,
+  "limitation": "These 12 published fixture tasks are development checks, not unseen held-out evidence.",
+  "repeats_per_task_arm": 3,
+  "required_before_execution": [
+    "Freeze host, model, tool/permission budget, candidate hashes, task snapshots and protocol ID",
+    "Mount only visible task/artifacts and the assigned skill; evaluator answers and prior runs inaccessible",
+    "Reset context and writable workspace per trial; capture actual tool/read traces and usage",
+    "Blind judges to condition/version; preserve raw output and failing trials"
+  ],
+  "schema_version": 1,
+  "seed": 20261026,
+  "statistical_unit": "Task; repeats are correlated, not independent task types",
+  "trials": [
+    {
+      "arm": "A",
+      "case_id": "FX09",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX03",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX08",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX10",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX12",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX01",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX09",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX09",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX09",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX08",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX04",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX10",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX09",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX11",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX02",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX04",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX08",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX11",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX07",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX12",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX11",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX03",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX07",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX05",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX07",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX08",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX11",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX01",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX06",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX06",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX07",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX04",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX01",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX06",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX04",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX01",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX10",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX12",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX05",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX01",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX03",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX11",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX09",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX02",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX05",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX07",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX12",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX11",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX12",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX02",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX04",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX02",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX01",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX02",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX03",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX12",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX03",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX04",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX07",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX11",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX08",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX05",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX03",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX08",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX07",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX03",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX10",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX10",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX01",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX05",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX05",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX07",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX06",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX08",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX10",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX05",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX06",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX06",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX02",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX11",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX03",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX09",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX10",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX12",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX04",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX01",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX06",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX11",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX08",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX04",
+      "trial": 2
+    },
+    {
+      "arm": "B",
+      "case_id": "FX09",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX10",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX03",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX05",
+      "trial": 2
+    },
+    {
+      "arm": "C",
+      "case_id": "FX05",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX06",
+      "trial": 1
+    },
+    {
+      "arm": "A",
+      "case_id": "FX09",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX12",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX01",
+      "trial": 2
+    },
+    {
+      "arm": "A",
+      "case_id": "FX02",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX08",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX06",
+      "trial": 1
+    },
+    {
+      "arm": "C",
+      "case_id": "FX07",
+      "trial": 3
+    },
+    {
+      "arm": "C",
+      "case_id": "FX02",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX10",
+      "trial": 3
+    },
+    {
+      "arm": "A",
+      "case_id": "FX04",
+      "trial": 3
+    },
+    {
+      "arm": "B",
+      "case_id": "FX12",
+      "trial": 1
+    },
+    {
+      "arm": "B",
+      "case_id": "FX02",
+      "trial": 3
+    }
+  ]
+}
