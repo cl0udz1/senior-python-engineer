@@ -2,8 +2,9 @@
 
 - **Skill:** senior-python-engineer
 - **Version:** 1.5.0
-- **Prepared:** 2026-10-26
-- **Installation:** pending explicit approval for the protected Skills destination; no successful push claimed
+- **Prepared and published:** 2026-10-26
+- **Publication:** source and evaluations pushed to `cl0udz1/senior-python-engineer`; verified import commit `096087745ef300203b1ed01de66e3a22f6be7c69`
+- **Installation:** copy only the runtime directory to the agent host. Publishing this repository does not itself install or activate the skill in a user's local environment.
 - **Imported baseline:** 1.4.0, preserved in the original user archive
 - **Original archive SHA-256:** b8cd6fcf774e5a3da08426929903cd264f8dbb9e85768a9587bdf45a9394b787
 - **Current operational guidance:** [runtime entry point](../../senior-python-engineer/SKILL.md)
@@ -28,11 +29,16 @@
 
 ## Validation and scope of evidence
 
-See [release verification](RELEASE_VERIFICATION.md) for exact commands, outcomes, environments, and
-fresh-agent observations. Passing an official metadata check, package checks, semantic probes, or
-reference-solution tests does not establish automatic host activation or comparative agent-quality gain.
-Current source verification covers the corrected claims in the registers; unchanged material is not
-blanket re-certified by this release date.
+See [release verification](RELEASE_VERIFICATION.md) for the original preparation commands, outcomes,
+environments, and fresh-agent observations. Its installation-status statements describe that earlier
+snapshot. See [publication verification](validation/publication-2026-10-26/README.md) for the recovered
+source checks, and the repository's Validate skill workflow for ongoing package and fixture checks.
+
+Passing an official metadata check, package checks, semantic probes, or reference-solution tests does
+not establish automatic host activation or comparative agent-quality gain. Current source verification
+covers the corrected claims in the registers; unchanged material is not blanket re-certified by this
+release date. The restored-source inventory records the pre-publication source, before the root README,
+this publication-status update, and the GitHub validation workflow.
 
 ## Update policy
 
