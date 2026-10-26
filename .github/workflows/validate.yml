@@ -1,0 +1,47 @@
+name: Validate skill
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - name: Check out the exact event commit
+        env:
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://github.com/${REPOSITORY}.git"
+          git fetch --depth=1 origin "$SOURCE_SHA"
+          git checkout --detach FETCH_HEAD
+      - name: Validate package and local references
+        working-directory: maintenance/senior-python-engineer
+        run: |
+          python3 --version
+          python3 tools/validate_skill.py
+      - name: Test package and evaluation tools
+        working-directory: maintenance/senior-python-engineer
+        run: python3 -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Reproduce Python mechanisms
+        working-directory: maintenance/senior-python-engineer
+        run: python3 tools/verify_python_semantics.py
+      - name: Validate broken and repaired fixtures
+        working-directory: maintenance/senior-python-engineer
+        run: python3 tools/evaluate.py selftest
