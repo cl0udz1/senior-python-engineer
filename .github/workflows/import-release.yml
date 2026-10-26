@@ -1,0 +1,116 @@
+name: Import verified release
+
+on:
+  push:
+    branches: [main]
+    paths: ['.release-import/READY.json']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-release
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the triggering source import
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://github.com/${REPOSITORY}.git"
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" fetch --depth=1 origin "$SOURCE_SHA"
+          git checkout -B main FETCH_HEAD
+      - name: Verify and unpack the release source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import lzma
+          from pathlib import Path, PurePosixPath
+
+          staging = Path('.release-import')
+          ready = json.loads((staging / 'READY.json').read_text(encoding='utf-8'))
+          if ready.get('schema_version') != 1:
+              raise SystemExit('Unsupported import schema')
+          parts = ready['parts']
+          if not isinstance(parts, list) or not 1 <= len(parts) <= 100:
+              raise SystemExit('Invalid part count')
+          chunks = []
+          for index, part in enumerate(parts):
+              expected_name = f'part-{index:03d}.bin'
+              if part['path'] != expected_name:
+                  raise SystemExit('Unexpected part path')
+              data = (staging / expected_name).read_bytes()
+              if len(data) != part['bytes'] or hashlib.sha256(data).hexdigest() != part['sha256']:
+                  raise SystemExit(f'Checksum mismatch: {expected_name}')
+              chunks.append(data)
+          compressed = b''.join(chunks)
+          if hashlib.sha256(compressed).hexdigest() != ready['compressed_sha256']:
+              raise SystemExit('Combined archive checksum mismatch')
+          decoder = lzma.LZMADecompressor(memlimit=268435456)
+          raw = decoder.decompress(compressed, max_length=20000001)
+          if len(raw) > 20000000 or not decoder.eof or decoder.unused_data:
+              raise SystemExit('Archive exceeds bounds or has trailing data')
+          if hashlib.sha256(raw).hexdigest() != ready['source_sha256']:
+              raise SystemExit('Source JSON checksum mismatch')
+          source = json.loads(raw.decode('utf-8'))
+          if source.get('schema_version') != 1 or len(source['files']) != ready['file_count']:
+              raise SystemExit('Source manifest mismatch')
+          paths = set()
+          validated = []
+          for entry in source['files']:
+              name = entry['path']
+              path = PurePosixPath(name)
+              if path.is_absolute() or '..' in path.parts or '\\' in name or str(path) != name:
+                  raise SystemExit(f'Unsafe file path: {name}')
+              if not (name in {'README.md', '.gitignore'} or name.startswith('senior-python-engineer/') or name.startswith('maintenance/senior-python-engineer/')):
+                  raise SystemExit(f'Unexpected source path: {name}')
+              if any(p in {'.git', '.github', '.release-import'} for p in path.parts) or name in paths:
+                  raise SystemExit(f'Duplicate or reserved source path: {name}')
+              paths.add(name)
+              data = entry['content'].encode('utf-8')
+              if len(data) != entry['bytes'] or hashlib.sha256(data).hexdigest() != entry['sha256']:
+                  raise SystemExit(f'File checksum mismatch: {name}')
+              validated.append((Path(name), data))
+          for path, data in validated:
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_bytes(data)
+          manifest = json.loads(Path('maintenance/senior-python-engineer/validation/runtime-manifest.json').read_text(encoding='utf-8'))
+          root = Path('senior-python-engineer')
+          actual = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+          expected = {entry['path'] for entry in manifest['files']}
+          if actual != expected:
+              raise SystemExit('Runtime file set differs from release manifest')
+          for entry in manifest['files']:
+              data = (root / entry['path']).read_bytes()
+              if len(data) != entry['bytes'] or hashlib.sha256(data).hexdigest() != entry['sha256']:
+                  raise SystemExit(f"Runtime checksum mismatch: {entry['path']}")
+          for name in [part['path'] for part in parts] + ['READY.json']:
+              (staging / name).unlink()
+          staging.rmdir()
+          print(f"Verified and restored {len(validated)} source files, including {len(expected)} runtime files.")
+          PY
+      - name: Commit and push the verified release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- README.md .gitignore senior-python-engineer maintenance .release-import
+          git commit -m 'Publish verified Senior Python Engineer v1.5.0 source and evaluation tools'
+          auth=$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)
+          git -c "http.extraheader=AUTHORIZATION: basic $auth" push origin HEAD:main
